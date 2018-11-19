@@ -1,0 +1,1436 @@
+<?xml version="1.0"?>
+<!DOCTYPE html SYSTEM "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:epub="http://www.idpf.org/2007/ops">
+  <head><style>
+  <!--
+/*
+    0 CSS RESET
+*/
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0; }
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  border: 0;
+  font-size: 100%; }
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, tt, var,
+b, u, i, center,
+dl, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  vertical-align: baseline; }
+
+html, body, div, span, applet, object, iframe,
+p, blockquote,
+a, abbr, acronym, address, big, cite,
+del, dfn, em, img, ins, q, s,
+small, strike, strong, sub, sup, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  font-family: "Overpass", sans-serif; }
+
+code, pre, tt, kbd, samp {
+  font-family: "Space Mono", monospace; }
+
+h1, h2, h3, h4, h5, h6, .h2Annex {
+  font-family: "Overpass", sans-serif; }
+
+dl {
+  display: grid;
+  grid-template-columns: max-content auto; }
+
+dt {
+  grid-column-start: 1; }
+
+dd {
+  grid-column-start: 2; }
+
+dd p, dt p {
+  margin-top: 0px; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/*
+    1. HTML & Body
+*/
+body {
+  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  color: #1d1d1d;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 1.4em;
+  background-color: #ffffff; }
+
+main {
+  margin: 0 3em 0 6em; }
+
+#toc {
+  font-family: "Overpass", sans-serif;
+  font-weight: 400; }
+
+/*
+    2. Responsive navigation layout
+*/
+@media screen and (min-width: 768px) {
+  nav {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 323px;
+    font-size: 0.9em;
+    overflow: auto;
+    padding: 0 0 0 45px;
+    margin-right: 30px;
+    background-color: #f7f7f7; }
+  #toggle {
+    position: fixed;
+    height: 100%;
+    width: 30px;
+    background-color: #1d1d1d;
+    color: white !important;
+    cursor: pointer;
+    z-index: 100; }
+  #toggle span {
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%); }
+  .container {
+    padding-left: 360px; }
+  .rule.toc {
+    display: none; }
+  h1.toc-contents {
+    margin-top: 1em; }
+  ul#toc-list {
+    padding: 0;
+    margin: 0; } }
+
+@media screen and (max-width: 768px) {
+  #toc {
+    padding: 0 1.5em 0 1.5em;
+    overflow: visible; } }
+
+@media screen {
+  img {
+    width: 100%;
+    height: auto; } }
+
+#toc ul {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+#toc li {
+  padding: 5px 10px; }
+
+#toc a {
+  color: #485094;
+  text-decoration: none;
+  display: block; }
+
+#toc a:hover {
+  color: white; }
+
+#toc .h2 {
+  padding-left: 30px; }
+
+#toc .h3 {
+  padding-left: 50px; }
+
+#toc .toc-active a {
+  color: white; }
+
+#toc .toc-active, #toc li:hover {
+  background: #1d1d1d;
+  box-shadow: inset -5px 0px 10px -5px #1d1d1d !important; }
+
+#toc li:hover a {
+  color: white; }
+
+/*
+    Document types + stages
+*/
+.document-type-band {
+  left: 0;
+  top: 180px;
+  height: 100%;
+  position: fixed;
+  display: block;
+  z-index: 99;
+  /*box-shadow: -5px 0px 10px #1d1d1d*/ }
+
+.document-stage-band {
+  left: 0;
+  top: 0;
+  height: 100%;
+  position: fixed;
+  display: block;
+  z-index: 98;
+  box-shadow: -5px 0px 10px #1d1d1d; }
+
+.document-type {
+  position: relative;
+  width: 25px; }
+
+.document-stage {
+  position: relative;
+  width: 25px; }
+
+p.document-type, p.document-stage {
+  color: white;
+  text-transform: uppercase;
+  font-size: 0.9em;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  margin: 0;
+  margin-left: 6px;
+  writing-mode: tb-rl;
+  transform: rotate(180deg);
+  white-space: nowrap;
+  display: block;
+  bottom: 0; }
+
+p.document-type {
+  font-weight: 400;
+  height: 210px; }
+
+#governance-band p.document-type {
+  font-weight: 400;
+  height: 230px !important; }
+
+p.document-stage {
+  font-weight: 300;
+  height: 160px; }
+
+#standard-band {
+  background-color: #0AC442; }
+
+#standard {
+  border-bottom: solid 3px #0AC442; }
+
+#directive-band {
+  background-color: #540D6E; }
+
+#directive {
+  border-bottom: solid 3px #540D6E; }
+
+#guide-band {
+  background-color: #D183C9; }
+
+#guide {
+  border-bottom: solid 3px #D183C9; }
+
+#specification-band {
+  background-color: #65AFFF; }
+
+#specification {
+  border-bottom: solid 3px #65AFFF; }
+
+#report-band {
+  background-color: #3A405A; }
+
+#report {
+  border-bottom: solid 3px #3A405A; }
+
+#amendment-band {
+  background-color: #F26430; }
+
+#amendment {
+  border-bottom: solid 3px #F26430; }
+
+#corrigendum-band {
+  background-color: #C84630; }
+
+#corrigendum {
+  border-bottom: solid 3px #C84630; }
+
+#administrative-band {
+  background-color: #BFAE48; }
+
+#administrative {
+  border-bottom: solid 3px #BFAE48; }
+
+#advisory-band {
+  background-color: #BD9391; }
+
+#advisory {
+  border-bottom: solid 3px #BD9391; }
+
+#proposal-band {
+  background-color: #39A0ED; }
+
+#proposal {
+  border-bottom: solid 3px #39A0ED; }
+
+#working-draft-band {
+  background-color: #2D7393; }
+
+#working-draft {
+  border-bottom: solid 3px #2D7393; }
+
+#committee-draft-band {
+  background-color: #2A6B7C; }
+
+#committee-draft {
+  border-bottom: solid 3px #2A6B7C; }
+
+#draft-standard-band {
+  background-color: #1C7F7A; }
+
+#draft-standard {
+  border-bottom: solid 3px #1C7F7A; }
+
+#final-draft-band {
+  background-color: #53C170; }
+
+#final-draft {
+  border-bottom: solid 3px #53C170; }
+
+#published-band {
+  background-color: #069E2D; }
+
+#published {
+  border-bottom: solid 3px #069E2D; }
+
+#withdrawn-band {
+  background-color: #004E64; }
+
+#withdrawn {
+  border-bottom: solid 3px #004E64; }
+
+#cancelled-band {
+  background-color: #2E382E; }
+
+#cancelled {
+  border-bottom: solid 3px #2E382E; }
+
+.coverpage-maturity {
+  font-family: "Overpass", sans-serif;
+  font-weight: 400;
+  font-size: 1em;
+  margin: 0 0 2em 0;
+  text-transform: uppercase; }
+
+/*
+    3. TYPOGRAPHY
+*/
+/*
+    3.1 Titles
+*/
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Overpass", sans-serif;
+  color: #0e1a85;
+  font-weight: 600;
+  margin-top: 2em;
+  margin-bottom: 0.3em; }
+
+h1 {
+  font-size: 1.4em;
+  text-transform: uppercase;
+  margin-top: 2em; }
+
+h1#content {
+  margin-top: 2em; }
+
+h2 {
+  font-size: 1.3em;
+  font-weight: 400; }
+
+h3 {
+  font-size: 1.1em;
+  font-weight: 400; }
+
+/*
+  span[id^="toc"]:after {
+    float: left;
+    padding-right: 4px;
+    margin-left: -20px;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 0.8em;
+    color: #cfcfcf;
+    content: "\f0c1";
+  }
+  */
+.TermNum, .Terms, .AltTerms {
+  color: #485094;
+  font-weight: 400; }
+
+p.TermNum {
+  font-size: 0.9em;
+  line-height: 1em;
+  margin: 0;
+  margin-top: 2em; }
+
+p.Terms {
+  font-size: 1.1em;
+  line-height: 1.7em;
+  margin: 0; }
+
+/*
+  p.AltTerms {
+    font-style: italic;
+    margin: 0;
+  }
+  */
+span.obligation {
+  font-weight: 400; }
+
+/*
+    3.2 Links
+*/
+a, a:visited {
+  text-decoration: none;
+  color: #485094; }
+
+a:hover {
+  color: white;
+  background: #1d1d1d;
+  box-shadow: 3px 0 0 #1d1d1d, -3px 0 0 #1d1d1d;
+  /* padding: 2px 0 2px 0; */ }
+
+::selection {
+  background: #1d1d1d;
+  /* WebKit/Blink Browsers */
+  color: white; }
+
+::-moz-selection {
+  background: #1d1d1d;
+  /* Gecko Browsers */
+  color: white; }
+
+.contact-info a:hover {
+  color: #485094;
+  text-decoration: underline;
+  background: none;
+  box-shadow: 0 0 0 0; }
+
+/*
+    3.3 Lists
+*/
+ul {
+  margin-left: 1.2em; }
+
+ol {
+  margin-left: 1.2em; }
+
+ul > li {
+  list-style: none; }
+
+ul > li:before {
+  content: "\2014";
+  display: inline-block;
+  width: 1em;
+  margin-left: -1.2em; }
+
+li p:first-child {
+  display: inline; }
+
+li:first-child {
+  margin-top: 1em; }
+
+#toc ul {
+  margin-bottom: 0.25em; }
+
+#toc li {
+  list-style-type: none; }
+
+#toc li:before {
+  content: " ";
+  display: none; }
+
+/*
+    3.4 Rules
+*/
+.rule {
+  width: 100%;
+  height: 1px;
+  background-color: #0e1a85;
+  margin: 2em 0; }
+
+h2 p {
+  display: inline; }
+
+/*
+    3.5 Bibliograhy
+*/
+p.Biblio, p.NormRef {
+  margin-top: 1em;
+  margin-left: 2em;
+  text-indent: -2em; }
+
+/*
+    3.6 Source Code + figures
+*/
+.figure, .Sourcecode {
+  font-family: "Space Mono", monospace;
+  background-color: #f7f7f7;
+  font-size: 0.8em;
+  line-height: 1.6em;
+  padding: 1.5em;
+  margin: 2em 0 1em 0;
+  overflow: auto; }
+
+.FigureTitle {
+  font-weight: 700;
+  font-size: 1em;
+  text-align: center; }
+
+/*
+    3.7 Notes
+*/
+.Note {
+  background-color: #fff495;
+  color: #47430c;
+  padding: 1.2em;
+  margin: 2em 0 1em 0; }
+
+/*
+    3.8 Examples
+*/
+table.example {
+  background-color: #e1eef1; }
+
+td.example {
+  padding: 0 1em 0 1em;
+  margin: 2em 0 1em 0; }
+
+.example .example-title {
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 0; }
+
+/*
+    3.9 Tables
+*/
+table {
+  border-collapse: collapse;
+  width: 100%;
+  font-weight: 300;
+  margin: 1em 0 2em 0;
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 2em; }
+
+table, th, td {
+  border: 1px solid black;
+  font-size: 0.95em; }
+
+td, th {
+  padding: 1em; }
+
+td.header {
+  font-weight: 400; }
+
+p.TableTitle {
+  text-align: center;
+  margin-top: 2.5em;
+  font-weight: 400; }
+
+/*
+  3.10 Footnotes
+*/
+a.footnote-number {
+  vertical-align: super;
+  font-size: 0.8em; }
+
+.footnote {
+  font-size: 0.9em; }
+
+/*
+    3.11 Blockquotes
+*/
+.Quote {
+  background-color: #f7f7f7;
+  font-style: italic;
+  width: 80%;
+  padding: 1.5em;
+  margin-top: 2em;
+  margin-left: auto;
+  margin-right: auto; }
+
+.QuoteAttribution {
+  text-align: right; }
+
+/*
+    3.12 Formulas
+*/
+.formula, .Formula {
+  background-color: #f7f7f7;
+  padding: 1.5em;
+  margin-top: 2em;
+  text-align: center; }
+
+/*
+    3.13 Contact Info
+*/
+.contact-info {
+  background-color: #f7f7f7;
+  padding: 2em;
+  margin-top: 5em;
+  width: auto;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left; }
+
+.contact-info p, .contact-info a {
+  font-family: "Space Mono", monospace;
+  font-weight: 400; }
+
+.contact-info .name {
+  font-weight: 700;
+  font-size: 1.2em;
+  margin-bottom: 0; }
+
+.contact-info .address {
+  font-size: 1em;
+  line-height: 1.3em;
+  margin-top: 0; }
+
+/*
+    Keywords
+*/
+span.keyword {
+  font-weight: 600; }
+
+/*
+    Paragraphs
+*/
+p {
+  margin-top: 1em;
+  margin-bottom: 1em; }
+
+/* Admonitions */
+.Admonition, .admonition {
+  background-color: #ffb3b3;
+  /* color: #47430c;*/
+  padding: 0.5em;
+  margin: 1.5em 0 1.5em 0;
+  text-align: left; }
+
+.Admonition p, .admonition p {
+  margin: 0; }
+
+/*
+    4.0 Page header
+*/
+/*
+    4.1 Top Logo
+*/
+.wrapper-top {
+  background-color: #0e1a85;
+  /* background-image: url("img/dots@2x.png"); */
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQAAAAEACAYAAABccqhmAAAACXBIWXMAABYlAAAWJQFJUiTwAAADwUlEQVR4nO3YgQ2AMAwDwcAiWZ1NizrH30lIeIEq9nPOGSDqPgC7+93v/suy3Mmvhx+6VAAIcwFAmc4nyzYAIMgGAGEuACirdyBZtgEASTYACHMBQFm9A8myDQBIsgFAmAsAyuodSJZtAECSDQDCXABQVu9AsmwDAJJsABDmAoCyegeSZRsAkGQDgDAXAJTVO5As2wCAJBsAhLkAoKzegWTZBgAk2QAgzAUAZfUOJMs2ACDJBgBhLgAoq3cgWbYBAEk2AAhzAUBZvQPJsg0ASLIBQJgLAMrqHUiWbQBAkg0AwlwAUFbvQLJsAwCSbAAQ5gKAsnoHkmUbAJBkA4AwFwCU1TuQLNsAgCQbAIS5AKCs3oFk2QYAJNkAIMwFAGX1DiTLNgAgyQYAYS4AKKt3IFm2AQBJNgAIcwFAWb0DybINAEiyAUCYCwDK6h1Ilm0AQJINAMJcAFBW70CybAMAkmwAEOYCgLJ6B5JlGwCQZAOAMBcAlNU7kCzbAIAkGwCEuQCgrN6BZNkGACTZACDMBQBl9Q4kyzYAIMkGAGEuACirdyBZtgEASTYACHMBQFm9A8myDQBIsgFAmAsAyuodSJZtAECSDQDCXABQVu9AsmwDAJJsABDmAoCyegeSZRsAkGQDgDAXAJTVO5As2wCAJBsAhLkAoKzegWTZBgAk2QAgzAUAZfUOJMs2ACDJBgBhLgAoq3cgWbYBAEk2AAhzAUBZvQPJsg0ASLIBQJgLAMrqHUiWbQBAkg0AwlwAUFbvQLJsAwCSbAAQ5gKAsnoHkmUbAJBkA4AwFwCU1TuQLNsAgCQbAIS5AKCs3oFk2QYAJNkAIMwFAGX1DiTLNgAgyQYAYS4AKKt3IFm2AQBJNgAIcwFAWb0DybINAEiyAUCYCwDK6h1Ilm0AQJINAMJcAFBW70CybAMAkmwAEOYCgLJ6B5JlGwCQZAOAMBcAlNU7kCzbAIAkGwCEuQCgrN6BZNkGACTZACDMBQBl9Q4kyzYAIMkGAGEuACirdyBZtgEASTYACHMBQFm9A8myDQBIsgFAmAsAyuodSJZtAECSDQDCXABQVu9AsmwDAJJsABDmAoCyegeSZRsAkGQDgDAXAJTVO5As2wCAJBsAhLkAoKzegWTZBgAk2QAgzAUAZfUOJMs2ACDJBgBhLgAoq3cgWbYBAEk2AAhzAUBZvQPJsg0ASLIBQJgLAMrqHUiWbQBAkg0AwlwAUFbvQLJsAwCSbAAQ5gKAsnoHkmUbAJBkA4AwFwCU1TuQLNsAgCQbAFTNzA9ggAr9aahO8QAAAABJRU5ErkJggg==");
+  color: #ffffff;
+  padding: 2em 0; }
+
+.doc-number {
+  font-size: 0.5em;
+  font-family: "Overpass", sans-serif; }
+
+.coverpage-title {
+  padding-bottom: 0.5em;
+  font-family: "Overpass", sans-serif;
+  font-size: 1.2em;
+  line-height: 1.2em;
+  font-weight: 900;
+  padding-left: 1em;
+  padding-right: 1em; }
+
+.title-section1 {
+  padding: 0 2em 0 3em; }
+
+.prefatory-section {
+  padding: 0 3em 0 6em; }
+
+.zzSTDTitle1, .MsoCommentText {
+  display: none; }
+
+.coverpage {
+  text-align: center;
+  padding-left: 1.5em; }
+
+.coverpage-logo span, .coverpage-tc-name span {
+  font-family: "Overpass", sans-serif;
+  text-transform: uppercase;
+  font-weight: 600; }
+
+.coverpage-tc-name {
+  font-size: 1.2em;
+  line-height: 1.2em;
+  margin: 0.25em 0; }
+
+/*
+    4.2 Document Identity
+*/
+.coverpage-doc-identity {
+  font-size: 2em;
+  line-height: 2em; }
+
+.coverpage-title .title-second {
+  display: none; }
+
+.coverpage-stage-block {
+  font-family: "Overpass", sans-serif;
+  font-weight: 700;
+  font-size: 1.25em;
+  margin: 2em 0em 2em 0em;
+  text-transform: uppercase; }
+
+/*
+    4.3 Draft Warning
+*/
+.coverpage-warning {
+  border-top: solid 1px #f36f36;
+  border-bottom: solid 1px #f36f36;
+  margin: 1em 2em;
+  color: #485094;
+  padding: 1em; }
+
+.coverpage-warning .title {
+  color: #f36f36;
+  font-family: "Overpass", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 1.2em; }
+
+/*
+    4.4 Copyright
+*/
+.copyright {
+  padding: 1em;
+  font-size: 0.8em;
+  text-align: left; }
+
+.copyright .name, .copyright .address {
+  color: #485094; }
+
+/*
+    5.0 Other styles
+*/
+/*
+To top button
+*/
+#myBtn {
+  font-family: "Space Mono", monospace;
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 12px;
+  border: none;
+  outline: none;
+  background-color: #1d1d1d;
+  opacity: 0.15;
+  color: white;
+  cursor: pointer;
+  padding: 10px 15px 10px 15px;
+  border-radius: 4px; }
+
+#myBtn:hover {
+  opacity: 1; }
+
+a.anchorjs-link:hover {
+  background: none;
+  color: #485094;
+  box-shadow: none; }
+
+@page {
+  margin: 2cm 1cm 2cm 1cm; }
+
+@media print {
+  h1, .title-section1 {
+    page-break-before: always; }
+  #toggle, .document-stage-band,
+  .document-type-band, #myBtn {
+    display: none; }
+  .container {
+    padding-left: 0; }
+  nav {
+    position: relative;
+    width: auto;
+    font-size: 0.9em;
+    overflow: auto;
+    padding: 0;
+    margin-right: 0;
+    background-color: white; }
+  #toc .toc-active a {
+    color: #485094; }
+  #toc .toc-active, #toc li:hover {
+    background: white;
+    box-shadow: none !important; }
+  #toc li:hover a {
+    color: black; }
+  h1.toc-contents {
+    margin-top: 2em; } }
+
+-->
+</style><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />        <title></title>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!--TOC script import-->
+    <script type="text/javascript" src="https://cdn.rawgit.com/jgallen23/toc/0.3.2/dist/toc.min.js"></script>
+
+    <!--Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i|Space+Mono:400,700" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Overpass:300,300i,600,900" rel="stylesheet" />
+    <!--Font awesome import for the link icon-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css" integrity="sha384-v2Tw72dyUXeU3y4aM2Y0tBJQkGfplr39mxZqlTBDUZAb9BGoC40+rdFCG0m10lXk" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/fontawesome.css" integrity="sha384-q3jl8XQu1OpdLgGFvNRnPdj5VIlCvgsDQTQB6owSOHWlAurxul7f+JpUOVdAiJ5P" crossorigin="anonymous" />
+<style class="anchorjs"></style>
+</head>
+  <body lang="EN-US" link="blue" vlink="#954F72" xml:lang="EN-US" class="container">
+    <div class="title-section"><div class="document-stage-band" id="published-band">
+    <p class="document-stage">Published</p>
+</div>
+
+<div class="document-type-band" id="standard-band">
+    <p class="document-type">CalConnect Standard</p>
+</div>
+
+
+
+  <div id="toggle"> <span>&#x2022;</span> </div>
+
+  <header>
+
+<!--<div class="WordSection1">-->
+  <div class="coverpage">
+    <div class="wrapper-top">
+
+  <div class="coverpage-doc-identity">
+    <div class="doc-number">
+      <span class="docnumber">CC 99999:2018</span>
+      <!-- <span class="docnumber-separator">:</span>
+      <span class="docyear">2018</span> -->
+    </div>
+
+    <div class="coverpage-title">
+      <span class="title-first"></span>
+      <!--<span class="title-second"></span>-->
+    </div>
+  </div>
+
+  <div class="coverpage-logo">
+    <span>The Calendaring and Scheduling Consortium</span>
+  </div>
+
+  <div class="coverpage-tc-name">
+    <span>TC PUBLISH</span>
+  </div>
+  </div>
+
+  <div class="title-section1">
+  <div class="coverpage-stage-block">
+    <span class="coverpage-stage" id="standard">CalConnect Standard</span>
+  </div>
+
+  <div class="coverpage-stage-block">
+    <span class="coverpage-maturity" id="published">Published</span>
+</div>
+
+
+
+<div class="copyright">
+  <p class="year">
+    &#xA9; 2018 The Calendaring and Scheduling Consortium, Inc.
+  </p>
+
+  <p class="message">
+    All rights reserved. Unless otherwise specified, no part of this
+    publication may be reproduced or utilized otherwise in any form or by any
+    means, electronic or mechanical, including photocopying, or posting on the
+    internet or an intranet, without prior written permission. Permission can
+    be requested from the address below.
+  </p>
+
+<div class="contact-info">
+  <p class="name">The Calendaring and Scheduling Consortium, Inc.</p>
+  <p class="address">
+    4390 Chaffin Lane<br />
+    McKinleyville<br />
+    California 95519<br />
+    United States of America<br />
+    <br />
+    <a href="mailto:copyright@calconnect.org">copyright@calconnect.org</a><br />
+    <a href="www.calconnect.org">www.calconnect.org</a>
+  </p>
+</div>
+</div>
+
+<div class="rule"></div>
+</div>
+
+
+
+</div></header>
+      <p>&#xA0;</p>
+    </div>
+    <br />
+    <div class="prefatory-section"><nav>
+  <h1 id="content">Contents</h1>
+  <div id="toc"></div>
+
+</nav>
+
+
+<div class="rule toc"></div>
+
+      <p>&#xA0;</p>
+    </div>
+    <br />
+    <main class="main-section"><button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+      <br />
+      <div>
+        <h1 class="ForewordTitle">Foreword</h1>
+        <p id="_7e84ab8d-9d00-4988-a2b6-c661be921cf5">The Guidelines for Implementation of the Common Patent Policy for ITU-T/ITU-R/ISO/IEC are intended to clarify and facilitate implementation of the Patent Policy, a copy of which can be found in Annex 1 and also on the web site of each Organization.</p>
+        <p id="_606eb229-dc7b-4783-ad08-c38a1b66ca2d">The Patent Policy encourages the early disclosure and identification of Patents that may relate to Recommendations | Deliverables under development. In doing so, greater efficiency in standards development is possible and potential patent rights problems can be avoided.</p>
+        <p id="_6483650d-1d7a-4fa6-b017-39c77d3264b6">Edition</p>
+        <ul id="_4680032b-b3f0-446a-a412-ec07b8d4a6f7">
+  <li>
+    <p id="_df9e986a-3dad-40b6-852b-d90e4d4d0368">1.0 Published initial version 1 March 2007</p>
+  </li>
+  <li>
+    <p id="_e809fc6c-6202-4149-a3b9-41ae4a8562d8">2.0 Published first revision 23 April 2012</p>
+  </li>
+  <li>
+    <p id="_53783c3c-9d87-482e-8d7a-ae783846d6a7">3.0 Published second revision 26 June 2015</p>
+  </li>
+  <li>
+    <p id="_f87cf77d-8e1f-4b73-beae-73fe4e0db2c7">4.0 Published third revision 2 November 2018</p>
+  </li>
+</ul>
+      </div>
+      <p class="zzSTDTitle1"></p>
+      <div id="_part_i_common_guidelines">
+        <h1>1.&#xA0; Part I &#x2013; Common guidelines</h1>
+        <div id="_purpose"><h2>1.1. Purpose</h2><p id="_a9c4e79b-f530-4c8b-a802-546052a2272c">ITU, in its Telecommunication Standardization Sector (ITU-T) and its Radiocommunication Sector (ITU-R), ISO and IEC have had patent policies for many years, the purpose being to provide in simple words practical guidance to the participants in their Technical Bodies in case patent rights matters arise.</p>
+<p id="_fc8f7af1-ed1a-420d-8a57-4dbe990ea010">Considering that the technical experts are normally not familiar with the complex issue of patent law, the Common Patent Policy for ITU-T/ITU-R/ISO/IEC (hereafter referred to as the "Patent Policy") was drafted in its operative part as a checklist, covering the three different cases which may arise if a Recommendation | Deliverable requires licences for Patents to be practiced or implemented, fully or partly.</p>
+<p id="_b18c0888-e36c-4364-999e-9f60c7cea28a">The Guidelines for Implementation of the Common Patent Policy for ITU-T/ITU-R/ISO/IEC (hereafter referred to as the "Guidelines") are intended to clarify and facilitate implementation of the Patent Policy, a copy of which can be found in Annex 1 and also on the web site of each Organization.</p>
+<p id="_4abdf9a1-7f37-41c9-a98e-8e601ecd4426">The Patent Policy encourages the early disclosure and identification of Patents that may relate to Recommendations | Deliverables under development. In doing so, greater efficiency in standards development is possible and potential patent rights problems can be avoided.</p>
+<p id="_f1608062-806e-4966-a48c-b2d732ac7c4b">The Organizations should not be involved in evaluating patent relevance or essentiality with regards to Recommendations | Deliverables, interfere with licensing negotiations, or engage in settling disputes on Patents; this should be left - as in the past - to the parties concerned.</p>
+<p id="_5c3f9c10-0e88-4af1-a3c2-9e32928f2647">Organization-specific provisions are contained in Part II of this document. However, it is understood that those Organization-specific provisions shall contradict neither the Patent Policy nor the Guidelines.</p></div>
+        <div id="_explanation_of_terms"><h2>1.2. Explanation of terms</h2>
+
+  <dl id="_88f74c85-708d-46a0-9f97-8687fa92a838"><dt><p>Contribution</p></dt><dd>
+    <p id="_ed930d92-3333-4623-beb6-2ff0b8c2496c">Any document submitted for consideration by a Technical Body.</p>
+  </dd><dt><p>Free of Charge</p></dt><dd>
+    <p id="_21621573-77e9-4362-9b9b-15df048a1e69">The words "Free of Charge" do not mean that the Patent Holder is waiving all of its rights with respect to the Patent. Rather, "Free of Charge" refers to the issue of monetary compensation; i.e., that the Patent Holder will not seek any monetary compensation as part of the licensing arrangement (whether such compensation is called a royalty, a one-time licensing fee, etc.). However, while the Patent Holder in this situation is committing to not charging any monetary amount, the Patent Holder is still entitled to require that the implementer of the relevant Recommendation | Deliverable sign a license agreement that contains other reasonable terms and conditions such as those relating to governing law, field of use, warranties, etc.</p>
+  </dd><dt><p>Organizations</p></dt><dd>
+    <p id="_2f53fc4d-ed69-46d2-8443-d8657d8e322e">ITU, ISO and IEC.</p>
+  </dd><dt><p>Patent</p></dt><dd>
+    <p id="_5563cfc9-6fa3-4c6f-bd38-eed576b4dc01">The word "Patent" means those claims contained in and identified by patents, utility models and other similar statutory rights based on inventions (including applications for any of these) solely to the extent that any such claims are essential to the implementation of a Recommendation | Deliverable. Essential patents are patents that would be required to implement a specific Recommendation | Deliverable.</p>
+  </dd><dt><p>Patent Holder</p></dt><dd>
+    <p id="_7dafa78d-7754-4c29-86ef-d1a54ec5bc5b">Person or entity that owns, controls and/or has the ability to license Patents.</p>
+  </dd><dt><p>Reciprocity</p></dt><dd>
+    <p id="_dce67297-6500-4aa8-907c-137a06c6b7e1">The word "Reciprocity" means that the Patent Holder shall only be required to license any prospective licensee if such prospective licensee will commit to license its Patent(s) for implementation of the same relevant Recommendation | Deliverable Free of Charge or under reasonable terms and conditions.</p>
+  </dd><dt><p>Recommendations | Deliverables</p></dt><dd>
+    <p id="_a759d5f3-db9f-4082-ac49-81c97a4ad9b5">ITU-T and ITU-R Recommendations are referred to as "Recommendations", ISO deliverables and IEC deliverables are referred to as "Deliverables". The various types of Recommendation(s) | Deliverable(s) are referred to as "Document types" in the Patent Statement and Licensing Declaration Form (hereafter referred to as "Declaration Form") attached as Annex 2.</p>
+  </dd><dt><p>Technical Bodies</p></dt><dd>
+    <p id="_3d6e39c8-c012-4a8c-a3d6-57d1900df30e">Study Groups, any subordinate groups and other groups of ITU-T and ITU-R and technical committees, subcommittees and working groups in ISO and IEC.</p>
+  </dd></dl>
+</div>
+        <div id="_patent_disclosure"><h2>1.3. Patent disclosure</h2><p id="_c16d4fe5-6029-4050-a9c3-47243e9d93cf">As mandated by the Patent Policy in its paragraph 1, any party participating<a rel="footnote" href="#fn:1" epub:type="footnote" id="fnref:1"><sup>1</sup></a> in the work of the Organizations should, from the outset, draw their attention to any known Patent or to any known pending Patent application, either its own or that of other organizations.</p>
+<p id="_8aa27491-ef82-40ec-8edf-6a9a5bbffbf0">In this context, the words "from the outset" imply that such information should be disclosed as early as possible during the development of the Recommendation | Deliverable. This might not be possible when the first draft text appears since at this time, the text might be still too vague or subject to subsequent major modifications. Moreover, that information should be provided in good faith and on a best effort basis, but there is no requirement for patent searches.</p>
+<p id="_78a42c82-84b7-4b61-b658-56d9f9cf6f61">In addition to the above, any party not participating in Technical Bodies may draw the attention of the Organizations to any known Patent, either their own and/or of any third-party.</p>
+<p id="_3885e81f-bf30-48eb-ab65-650058091d1a">When disclosing their own Patents, Patent Holders have to use the Patent Statement and Licensing Declaration Form (referred to as the "Declaration Form") as stated in Section 4 of these Guidelines.</p>
+<p id="_cacb8c95-ef93-4002-87d5-09da88389055">Any communication drawing the attention to any third-party Patent should be addressed to the concerned Organization(s) in writing. The potential Patent Holder will then be requested by the Director/CEO of the relevant Organization(s) to submit a Declaration Form, if applicable.</p>
+<p id="_7e26e964-4861-4861-bc49-36804bdd4944">The Patent Policy and these Guidelines also apply to any Patent disclosed or drawn to the attention of the Organizations subsequent to the approval of a Recommendation | Deliverable.</p>
+<p id="_de773c9f-dc5a-4119-b2c7-dbd336d9ce73">Whether the identification of the Patent took place before or after the approval of the Recommendation | Deliverable, if the Patent Holder is unwilling to license under paragraph 2.1 or 2.2 of the Patent Policy, the Organizations will promptly advise the Technical Bodies responsible for the affected Recommendation | Deliverable so that appropriate action can be taken. Such action will include, but may not be limited to, a review of the Recommendation | Deliverable or its draft in order to remove the potential conflict or to further examine and clarify the technical considerations causing the conflict.</p></div>
+        <div id="_patent_statement_and_licensing_declaration_form"><h2>1.4. Patent Statement and Licensing Declaration Form</h2><div id="_the_purpose_of_the_declaration_form"><h3>1.4.1. The purpose of the Declaration Form</h3><p id="_48da2914-c127-4a38-8e48-36c1ecc37147">To provide clear information in the Patent Information databases of each Organization, Patent Holders have to use the Declaration Form, which is available on the web site of each Organization (the Declaration Form is included in Annex 2 for information purposes). They must be sent to the Organizations for the attention, for ITU, of the Directors of the TSB or the BR or, for ISO or IEC, of the CEOs. The purpose of the Declaration Form is to ensure a standardized submission to the respective Organizations of the declarations being made by Patent Holders.</p>
+<p id="_38fb0460-3a5e-43b0-ba5f-a66e53292c28">The Declaration Form gives Patent Holders the means of making a licensing declaration relative to rights in Patents required for implementation of a specific Recommendation | Deliverable. Specifically, by submitting this Declaration Form the submitting party declares its willingness to license (by selecting option 1 or 2 on the Form) /or its unwillingness to license (by selecting option 3 on the Form), according to the Patent Policy, Patents held by it and whose licence would be required to practice or implement part(s) or all of a specific Recommendation | Deliverable.</p>
+<p id="_9e18e979-75e2-4ad7-9189-1f83cfdf87f2">If a Patent Holder has selected the licensing option 3 on the Declaration Form, then, for the referenced relevant ITU Recommendation and ISO or IEC Deliverable, the ITU, ISO and IEC require the Patent Holder to provide certain additional information permitting patent identification.</p>
+<p id="_deb8a4d1-0345-49e3-8452-d018a84fc066">Multiple Declaration Forms are appropriate if the Patent Holder wishes to identify several Patents and classifies them in different options of the Declaration Form for the same Recommendation | Deliverable or if the Patent Holder classifies different claims of a complex patent in different options of the Declaration Form.</p>
+<p id="_f19009d9-fe2a-4a48-9d74-e4c39b49c19a">Information contained in a Declaration Form may be corrected in case of obvious errors, such as a typographical mistake in a standard or patent reference number. The licensing declaration contained in the Declaration Form remains in force unless it is superseded by another Declaration Form containing more favourable licensing terms and conditions from a licensee&#x2019;s perspective reflecting (a) a change in commitment from option 3 to either option 1 or option 2, (b) a change in commitment from option 2 to option 1 or (c) un-checking one or more sub-options contained within option 1 or 2.</p></div>
+<div id="_contact_information"><h3>1.4.2. Contact information</h3><p id="_431f5ea1-cac1-4dc3-86b5-c21be6ca320e">In completing Declaration Forms, attention should be given to supplying contact information that will remain valid over time. Where possible, the "Name and Department" and e-mail address should be generic. Also it is preferable, where possible, that parties, particularly multinational organizations, indicate the same contact point on all Declaration Forms submitted.</p>
+<p id="_9e2e4216-3e5d-4272-843f-fd1ffadf4f91">With a view to maintaining up-to-date information in the Patent Information database of each Organization, it is requested that the Organizations be informed of any change or corrections to the Declaration Form submitted in the past, especially with regard to the contact person.</p></div></div>
+        <div id="_conduct_of_meetings"><h2>1.5. Conduct of meetings</h2><p id="_71c517ae-a8ce-43f8-a03b-d85288c669be">Early disclosure of Patents contributes to the efficiency of the process by which Recommendations | Deliverables are established. Therefore, each Technical Body, in the course of the development of a proposed Recommendation | Deliverable, will request the disclosure of any known Patents essential to the proposed Recommendation | Deliverable.</p>
+<p id="_a6900798-8c4b-423b-bbd1-118f26e9f378">Chairmen of Technical Bodies will, if appropriate, ask, at an appropriate time in each meeting, whether anyone has knowledge of patents, the use of which may be required to practice or implement the Recommendation | Deliverable being considered. The fact that the question was asked shall be recorded in the meeting report, along with any affirmative responses.</p>
+<p id="_a11798b8-6343-421f-abe6-202505e82cbb">As long as the Organization concerned has received no indication of a Patent Holder selecting paragraph 2.3 of the Patent Policy, the Recommendation | Deliverable may be approved using the appropriate and respective rules of the Organization concerned. It is expected that discussions in Technical Bodies will include consideration of including patented material in a Recommendation | Deliverable, however the Technical Bodies may not take position regarding the essentiality, scope, validity or specific licensing terms of any claimed Patents.</p></div>
+        <div id="_patent_information_database"><h2>1.6. Patent Information database</h2><p id="_d92b294e-bc31-4314-ada0-6cf5ee197e21">In order to facilitate both the standards-making process and the application of Recommendations | Deliverables, each Organization makes available to the public a Patent Information database composed of information that was communicated to the Organizations by the means of Declaration Forms. The Patent Information database may contain information on specific patents, or may contain no such information but rather a statement about compliance with the Patent Policy for a particular Recommendation | Deliverable.</p>
+<p id="_58145de0-cc2a-43cc-a329-a7a14bd1db87">The Patent Information databases are not certified to be either accurate or complete, but only reflect the information that has been communicated to the Organizations. As such, the Patent Information databases may be viewed as simply raising a flag to alert users that they may wish to contact the entities who have communicated Declaration Forms to the Organizations in order to determine if patent licenses must be obtained for use or implementation of a particular Recommendation | Deliverable.</p></div>
+        <div id="_assignment_or_transfer_of_patent_rights"><h2>1.7. Assignment or Transfer of Patent Rights</h2>
+
+  <p id="_677a01de-f110-4f2b-ab14-99883c14b617">The rules governing the assignment or transfer of Patent rights are contained in the patent statement and licensing declaration forms (see Annexes 2 and 3). By complying with these rules, the Patent Holder has discharged in full all of its obligations and liability with regards to the licensing commitments after the transfer or assignment. These rules are not intended to place any duty on the Patent Holder to compel compliance with the licensing commitment by the assignee or transferee after the transfer occurs.</p>
+</div>
+      </div>
+      <div id="_part_ii_organization_specific_provisions">
+        <h1>2.&#xA0; Part II &#x2013; Organization-specific provisions</h1>
+        <div id="_specific_provisions_for_itu"><h2>2.1. Specific provisions for ITU</h2><div id="_itu_1_general_patent_statement_and_licensing_declaration_form"><h3>2.1.1. ITU-1 General Patent Statement and Licensing Declaration Form</h3><p id="_cd3c2c08-5792-4460-a88e-56d7c17632dd">Anyone may submit a General Patent Statement and Licensing Declaration Form which is available on the web sites of ITU-T and ITU-R (the form in Annex 3 is included for information purposes). The purpose of this form is to give Patent Holders the voluntary option of making a general licensing declaration relative to material protected by Patents contained in any of their Contributions. Specifically, by submitting its form, the Patent Holder declares its willingness to license its Patents owned by it in case part(s) or all of any proposals contained in its Contributions submitted to the Organization are included in Recommendation(s) and the included part(s) contain items for which Patents have been filed and whose licence would be required to practice or implement Recommendation(s).</p>
+<p id="_eeafac2d-9746-493b-8b3a-093e74f6a5bd">The General Patent Statement and Licensing Declaration Form is not a replacement for the "individual" (see clause 4 of Part I) Declaration Form, which is made per Recommendation, but is expected to improve responsiveness and early disclosure of the Patent Holder&#x2019;s compliance with the Patent Policy. Therefore, in addition to its existing General Patent Statement and Licensing Declaration in respect of its Contributions, the Patent Holder should, when appropriate (e.g. if it becomes aware that it has a Patent for a specific Recommendation), also submit an "individual" Patent Statement and Licensing Declaration Form:<br /></p>
+<ul id="_f6ea5244-02b4-4bd1-b928-5ac8aeb964b7">
+  <li>
+    <p id="_e3ef7044-b0f3-47c3-9c92-4eccf8ac9b0c">for the Patents contained in any of its Contributions submitted to the Organization which are included in a Recommendation, any such "individual" Patent Statement and Licensing Declarations may contain either the same licensing terms and conditions as in the General Patent Statement and Licensing Declaration Form, or more favourable licensing terms and conditions from a licensee&#x2019;s perspective as defined in the "individual" (see clause 4.1 of Part I) Declaration Form; and</p>
+  </li>
+  <li>
+    <p id="_6c88b5b5-8d55-4354-b8e0-48bb2d1e763b">for the Patents that the Patent Holder did not contribute to the Organization which are included in a Recommendation, any such "individual" Patent Statement and Licensing Declarations may contain any of the three options available on the Form (see clause 4.1 of Part I), regardless of the commitment in its existing General Patent Statement and Licensing Declaration.</p>
+  </li>
+</ul>
+<p id="_7aaab33a-9357-4dfc-80f2-e9279a624a40">The General Patent Statement and Licensing Declaration remains in force unless it is superseded by another General Patent Statement and Licensing Declaration form containing more favourable licensing terms and conditions from a licensee&#x2019;s perspective reflecting (a) a change in commitment from option 2 to option 1 or (b) un-checking one or more sub- options contained within option 1 or 2.</p>
+<p id="_f012b11e-0113-4b28-bf3f-285cfb8a3740">The ITU Patent Information database also contains a record of General Patent Statement and Licensing Declarations.</p></div>
+<div id="_itu_2_notification"><h3>2.1.2. ITU-2 Notification</h3><p id="_ad19a9bd-609b-4f76-b652-1ab6752698f3">Text shall be added to the cover sheets of all new and revised ITU-T and ITU-R Recommendations, where appropriate, urging users to consult the ITU Patent Information database. The wording is:</p>
+<div class="Quote" id="_c7095ebc-6878-4a74-a75d-01d1fc5e00a2"><p id="_3256b583-123a-4c20-a9f7-d80c4460623b">"ITU draws attention to the possibility that the practice or implementation of this Recommendation may involve the use of a claimed Intellectual Property Right. ITU takes no position concerning the evidence, validity or applicability of claimed Intellectual Property Rights, whether asserted by ITU members or others outside of the Recommendation development process.</p>
+<p id="_e0856316-c48e-492b-812b-39686795fd9e">As of the date of approval of this Recommendation, ITU [had/had not] received notice of intellectual property, protected by patents, which may be required to implement this Recommendation. However, implementers are cautioned that this may not represent the latest information and are therefore strongly urged to consult the ITU Patent Information database."</p><p class="QuoteAttribution"></p></div></div></div>
+        <div id="_specific_provisions_for_iso_and_iec"><h2>2.2. Specific provisions for ISO and IEC</h2><div id="_isoiec_1_consultations_on_draft_deliverables"><h3>2.2.1. ISO/IEC-1 Consultations on draft Deliverables</h3><p id="_0e996693-dcfd-4b23-b598-a533bd7a6947">All drafts submitted for comment shall include on the cover page the following text:</p>
+<div class="Quote" id="_c5053bd8-2fd1-48c6-997e-a458c7d2d0f0">
+  <p id="_4303af28-cc2a-4b55-804d-ede46e8bc48d">"Recipients of this draft are invited to submit, with their comments, notification of any relevant patent rights of which they are aware and to provide supporting documentation."</p>
+<p class="QuoteAttribution"></p></div></div>
+<div id="_isoiec_2_notification"><h3>2.2.2. ISO/IEC-2 Notification</h3><p id="_5db191e5-f533-46c7-a53c-a373dc11a557">A published document for which no patent rights are identified during the preparation thereof shall contain the following notice in the foreword:</p>
+<div class="Quote" id="_61b9708d-537c-46f8-a2df-18044d37325b">
+  <p id="_5baf5c1a-b926-42c9-9ce0-3654193aa17f">"Attention is drawn to the possibility that some of the elements of this document may be the subject of patent rights. ISO [and/or] IEC shall not be held responsible for identifying any or all such patent rights."</p>
+<p class="QuoteAttribution"></p></div>
+<p id="_da98060c-96d6-496f-9c96-c74705e11fc3">A published document for which patent rights have been identified during the preparation thereof shall include the following notice in the introduction:</p>
+<div class="Quote" id="_23bcfc18-9d41-4e5b-a7c3-f12ab127e532"><p id="_ba7f075e-e590-48cc-9273-c254d69a5615">"The International Organization for Standardization (ISO) [and/or] International Electrotechnical Commission (IEC) draws attention to the fact that it is claimed that compliance with this document may involve the use of a patent concerning (&#x2026;&#x200B; subject matter &#x2026;&#x200B;) given in (&#x2026;&#x200B; subclause &#x2026;&#x200B;).</p>
+<p id="_69443ea5-9647-407c-b8e8-b324f398f2e6">ISO [and/or] IEC take[s] no position concerning the evidence, validity and scope of this patent right.</p>
+<p id="_81f9697d-9c2c-4175-a459-b2b5a530f651">The holder of this patent right has assured the ISO [and/or] IEC that he/she is willing to negotiate licences under reasonable and non-discriminatory terms and conditions with applicants throughout the world. In this respect, the statement of the holder of this patent right is registered with ISO [and/or] IEC. Information may be obtained from:</p>
+<p id="_f6532373-3e86-461d-8ce6-cf9ecd1d662f">name of holder of patent right &#x2026;&#x200B;</p>
+<p id="_62aafda8-0b71-418f-96fc-b2a313f51dbd">address &#x2026;&#x200B;</p>
+<p id="_67404e6d-60a3-4321-ba0a-f709fcbc9ed1">Attention is drawn to the possibility that some of the elements of this document may be the subject of patent rights other than those identified above. ISO [and/or] IEC shall not be held responsible for identifying any or all such patent rights."</p><p class="QuoteAttribution"></p></div></div>
+<div id="_isoiec_3_national_adoptions"><h3>2.2.3. ISO/IEC-3 National Adoptions</h3>
+
+  <p id="_8f8a2eda-b86f-4409-ad4a-289bed0d7065">Patent Declarations in ISO, IEC and ISO/IEC Deliverables apply only to the ISO and/or IEC documents indicated in the Declaration Forms. Declarations do not apply to documents that are altered (such as through national or regional adoption). However, implementations that conform to identical national and regional adoptions and the respective ISO and/or IEC Deliverables, may rely on Declarations submitted to ISO and/or IEC for such Deliverables.</p>
+</div></div>
+      </div>
+      <br />
+      <div id="_common_patent_policy_for_itu_titu_risoiec" class="Section3">
+        <h1 class="Annex"><b>Appendix A</b><br />(normative) <br /><b>Common patent policy for ITU-T/ITU-R/ISO/IEC</b></h1>
+        <p id="_3e90a318-30d4-4988-ac4c-d0b425dd1139">The following is a "code of practice" regarding patents covering, in varying degrees, the subject matters of ITU-T Recommendations, ITU-R Recommendations, ISO deliverables and IEC deliverables (for the purpose of this document, ITU-T and ITU-R Recommendations are referred to as "Recommendations", ISO deliverables and IEC deliverables are referred to as "Deliverables"). The rules of the "code of practice" are simple and straightforward. Recommendations | Deliverables are drawn up by technical and not patent experts; thus, they may not necessarily be very familiar with the complex international legal situation of intellectual property rights such as patents, etc.</p>
+        <p id="_61352c7a-deb6-4cf6-a899-ebda9d31eb77">Recommendations | Deliverables are non-binding; their objective is to ensure compatibility of technologies and systems on a worldwide basis. To meet this objective, which is in the common interests of all those participating, it must be ensured that Recommendations | Deliverables, their applications, use, etc. are accessible to everybody.</p>
+        <p id="_0e005455-8472-4213-9067-4f326f09d088">It follows, therefore, that a patent embodied fully or partly in a Recommendation | Deliverable must be accessible to everybody without undue constraints. To meet this requirement in general is the sole objective of the code of practice. The detailed arrangements arising from patents (licensing, royalties, etc.) are left to the parties concerned, as these arrangements might differ from case to case.</p>
+        <p id="_844cdbd5-5611-4e1e-9e7c-e25ea2f7edb6">This code of practice may be summarized as follows:</p>
+        <ol type="a" id="_eced375a-e5bd-4a6e-81d7-392abc5cbf87">
+  <li>
+    <p id="_be0dd31f-2be5-4111-852e-86371350735b">The ITU Telecommunication Standardization Bureau (TSB), the ITU Radio-communication Bureau (BR) and the offices of the CEOs of ISO and IEC are not in a position to give authoritative or comprehensive information about evidence, validity or scope of patents or similar rights, but it is desirable that the fullest available information should be disclosed. Therefore, any party participating in the work of ITU, ISO or IEC should, from the outset, draw the attention of the Director of ITU-TSB, the Director of ITU-BR, or the offices of the CEOs of ISO or IEC, respectively, to any known patent or to any known pending patent application, either their own or of other organizations, although ITU, ISO or IEC are unable to verify the validity of any such information.</p>
+  </li>
+  <li>
+    <p id="_37a50ab2-c01b-4995-a1c6-8522b2705f75">If a Recommendation | Deliverable is developed and such information as referred to in paragraph 1 has been disclosed, three different situations may arise:</p>
+    <ol type="1" id="_e76d0f19-5190-48e1-8d8c-a0d5b36ed8a0">
+  <li>
+    <p id="_caf22dbe-06fb-49e4-ab62-96f613211b24">The patent holder is willing to negotiate licences free of charge with other parties on a non-discriminatory basis on reasonable terms and conditions. Such negotiations are left to the parties concerned and are performed outside ITU-T/ITU-R/ISO/IEC.</p>
+  </li>
+  <li>
+    <p id="_2dcbd162-56e3-46fc-a1ea-4b4d796cd30c">The patent holder is willing to negotiate licences with other parties on a non- discriminatory basis on reasonable terms and conditions. Such negotiations are left to the parties concerned and are performed outside ITU-T/ITU-R/ISO/IEC.</p>
+  </li>
+  <li>
+    <p id="_a0d15ea8-0787-428d-a5c7-6e63bbdf5000">The patent holder is not willing to comply with the provisions of either paragraph 2.1 or paragraph 2.2; in such case, the Recommendation | Deliverable shall not include provisions depending on the patent.</p>
+  </li>
+</ol>
+  </li>
+  <li>
+    <p id="_505a6c38-4195-491d-96c4-49b3143fc731">Whatever case applies (2.1, 2.2 or 2.3), the patent holder has to provide a written statement to be filed at ITU-TSB, ITU-BR or the offices of the CEOs of ISO or IEC, respectively, using the appropriate "Patent Statement and Licensing Declaration" Form. This statement must not include additional provisions, conditions, or any other exclusion clauses in excess of what is provided for each case in the corresponding boxes of the form.
+10</p>
+  </li>
+</ol>
+      </div>
+      <br />
+      <div id="_patent_statement_and_licensing_declaration_form_for_itu_t_or_itu_r_recommendation_iso_or_iec_deliverable" class="Section3">
+        <h1 class="Annex"><b>Appendix B</b><br />(normative) <br /><b>Patent Statement and Licensing Declaration Form for ITU-T or ITU-R Recommendation | ISO or IEC Deliverable</b></h1>
+        <p id="_06d782fb-81ce-4b5b-a5eb-7d0ad7a726ef">Patent Statement and Licensing Declaration for ITU-T or ITU-R Recommendation | ISO or IEC Deliverable</p>
+        <p id="_255f56d4-a6ef-47f2-921c-52e069e73b65">
+  <i>This declaration does not represent an actual grant of a license</i>
+</p>
+        <p id="_50e9bb19-dab9-4452-a2b9-23921ae6b911">Please return to the relevant organization(s) as instructed below per document type:</p>
+        <p class="TableTitle" align="center">Table B.1</p>
+        <table id="_a892095f-16cb-4ec3-80c4-940d86176502" class="MsoISOTable" border="1" cellspacing="0" cellpadding="0">
+          <tbody>
+            <tr>
+              <td align="left" style="border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;"><p id="_1288dbb5-c0d6-49c7-90d1-a0bee0c74a68">Director</p>
+<p id="_1c5adde8-a3ad-4064-89ed-9d966bd4707b">Telecommunication Standardization Bureau</p>
+<p id="_8d1d65dc-ec25-419a-b4ee-f3a94d5eeef8">International Telecommunication Union</p>
+<p id="_43563308-598b-440e-b74d-63043b650642">Place des Nations</p>
+<p id="_4c3591c5-1322-4aed-aa4f-7ffa2f3c73bb">CH-1211 Geneva 20, Switzerland</p>
+<p id="_9eb51c77-8a11-4136-8e7e-fa5e4ad9b00e">Fax: +41 22 730 5853</p>
+<p id="_a38cd5d4-2714-4e98-ba4b-31821d1747a7">Email: <a href="mailto:tsbdir@itu.int">tsbdir@itu.int</a></p></td>
+              <td align="left" style="border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;"><p id="_d5c0aa3e-4d36-4976-bf48-2c097c315d65">Director</p>
+<p id="_8bb1e982-8652-4e01-97d5-1050849928ac">Radiocommunication Bureau</p>
+<p id="_e5a6baa0-1a3f-4f86-86e5-21f7e58865c0">International Telecommunication Union</p>
+<p id="_11b58aa3-ccc2-465a-a12d-e72e3bf8f4bc">Place des Nations</p>
+<p id="_f957d913-4b07-419e-abdb-df96b2db8c1e">CH-1211 Geneva 20, Switzerland</p>
+<p id="_08519cdd-483e-41c1-a9ea-f55a688a3b3c">Fax: +41 22 730 5785</p>
+<p id="_9c2f1854-57a7-4fa0-be91-1ee86af63c1c">Email: <a href="mailto:brmail@itu.int">brmail@itu.int</a></p></td>
+              <td align="left" style="border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;"><p id="_e6e566e2-31c6-4dd6-9beb-5f5c1d6c2f5a">Secretary-General</p>
+<p id="_a30f66fe-f83c-41a0-952e-f3443f0afcd3">International Organization for Standardization</p>
+<p id="_79b56feb-2177-4965-a26a-6e5d9194f3da">8 Chemin de Blandonnet</p>
+<p id="_c35b3dc5-833a-43a8-bf5a-60679f47cebb">CP 401</p>
+<p id="_4d875d78-91d3-4923-bbfb-7502765696dc">1214 Vernier, Geneva Switzerland</p>
+<p id="_621aa722-bd06-48dc-89ec-48cd0e4b0483">Fax: +41 22 733 3430</p>
+<p id="_4b509066-05e0-4979-b675-24da5a247444">Email: <a href="mailto:patent.statements@iso.org">patent.statements@iso.org</a></p></td>
+              <td align="left" style="border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;"><p id="_e9fd051c-0b29-4a92-9a4f-4adce24f3914">General Secretary</p>
+<p id="_d0eac821-b06d-447a-9bbd-6c509b7fcb7d">International Electrotechnical Commission</p>
+<p id="_5681734e-58cb-48b9-8875-12882f3d22ab">3 rue de Varembe&#x301;</p>
+<p id="_8594c85d-99a1-4a8a-a268-2ec48c249f04">CH-1211 Geneva 20 Switzerland</p>
+<p id="_eb69e2f3-2298-4cab-9c1f-53afd71e2e17">Fax: +41 22 919 0300</p>
+<p id="_cfe3d3f5-9ec8-45ea-8023-fd44d4635ee6">Email: <a href="mailto:inmail@iec.ch">inmail@iec.ch</a></p></td>
+            </tr>
+          </tbody>
+        </table>
+        <div id="_patent_holder"><h2>B.1. Patent Holder</h2>
+
+  <ul id="_ff935c1c-698a-49a4-b644-dbd4ba23c550">
+  <li>
+    <p id="_aeb55e64-f06e-4c82-8dd3-a8ad2dd39755">Legal Name: __________________________</p>
+  </li>
+</ul>
+</div>
+        <div id="_contact_for_license_application"><h2>B.2. Contact for license application</h2>
+
+  <ul id="_1c056837-da97-455a-b490-2c1aa763cd56">
+  <li>
+    <p id="_b0159658-487e-427b-91f1-b4e009f585b8">Name &amp; Department __________________________</p>
+  </li>
+  <li>
+    <p id="_7ed603b5-5f6f-4612-883e-81c05f7c6332">Address __________________________</p>
+  </li>
+  <li>
+    <p id="_ef25269e-526e-4917-9fc5-a872209d9ed5">Tel. __________________________</p>
+  </li>
+  <li>
+    <p id="_841757b7-a3c7-4dde-a460-c8b1a4511830">Fax __________________________</p>
+  </li>
+  <li>
+    <p id="_40eaa287-0d1b-4853-a730-de42e7daaacf">E-mail __________________________</p>
+  </li>
+  <li>
+    <p id="_e933efce-b8e9-4591-bc6f-159f6f896bda">URL (optional) __________________________</p>
+  </li>
+</ul>
+</div>
+        <div id="_document_type"><h2>B.3. Document type</h2><p id="_45e54e9e-1348-4fde-b2a5-1ea5aebd6060">(please return the form to the relevant Organization)</p>
+<ul id="_bd44ed1b-42f0-403f-93b7-112693187d62">
+  <li>
+    <p id="_f4919aa6-44d5-4dfb-817f-e0585362fe77">ITU-T Rec.</p>
+  </li>
+  <li>
+    <p id="_c270e9f7-f33d-4a1e-8aa6-b3d654d231d1">ITU-R Rec.</p>
+  </li>
+  <li>
+    <p id="_f6bfe0e8-e951-4d8b-9d68-19a97a395bb1">ISO Deliverable</p>
+  </li>
+  <li>
+    <p id="_062b0fc4-e697-40fe-acd9-81283ddfb1c7">IEC Deliverable</p>
+  </li>
+  <li>
+    <p id="_3c28ab49-6844-4a18-8cf3-1f3910d1b066">Common text or twin text (ITU-T Rec. | ISO/IEC Deliverable) (for common text or twin text,
+please return the form to each of the three Organizations: ITU-T, ISO, IEC)</p>
+  </li>
+  <li>
+    <p id="_144f1633-f707-4be6-96fd-e08289ceebfa">ISO/IEC Deliverable
+(for ISO/IEC Deliverables, please return the form to both ISO and IEC)</p>
+  </li>
+</ul></div>
+        <div id="_common"><h2>B.4. Common</h2>
+
+  <ul id="_23f6eb24-aa7b-4859-8b42-4a57a20f4fa4">
+  <li>
+    <p id="_718190fb-5518-4c74-8209-244a8abbac13">Number  __________________________</p>
+  </li>
+  <li>
+    <p id="_05439a44-8940-4680-ae70-f948e46a55c0">Title  __________________________</p>
+  </li>
+</ul>
+</div>
+        <div id="_licensing_declaration"><h2>B.5. Licensing declaration</h2><p id="_01c8da86-17d8-4636-96fe-8f39dfdd6938">The Patent Holder believes that it holds granted and/or pending applications for Patents, the use of which would be required to implement the above document and hereby declares, in accordance with the Common Patent Policy for ITU-T/ITU-R/ISO/IEC, that (check one box only):</p>
+<p id="_cd598740-48f5-42c0-9e76-b87bdb9aeada">[ ] 1. The Patent Holder is prepared to grant a Free of Charge license to an unrestricted number of applicants on a worldwide, non-discriminatory basis and under other reasonable terms and conditions to make, use, and sell implementations of the above document.</p>
+<p id="_762c378a-b2a2-4abc-9960-ccc81fa148d1">Negotiations are left to the parties concerned and are performed outside the ITU-T, ITU-R, ISO or IEC.</p>
+<p id="_5d5fe49a-d039-43c3-b73c-4ae9655c2e11">Also mark here __ if the Patent Holder&#x2019;s willingness to license is conditioned on Reciprocity for the above document.</p>
+<p id="_a7d72c53-382d-45b7-9ae3-7bdce649ac8d">Also mark here __ if the Patent Holder reserves the right to license on reasonable terms and conditions (but not Free of Charge) to applicants who are only willing to license their Patent, whose use would be required to implement the above document, on reasonable terms and conditions (but not Free of Charge).</p>
+<p id="_bf0ecd6c-d906-45e0-9a7c-e03833b2ad0a">[ ] 2. The Patent Holder is prepared to grant a license to an unrestricted number of applicants on a worldwide, non-discriminatory basis and on reasonable terms and conditions to make, use and sell implementations of the above document.</p>
+<p id="_efa2ea43-2269-4cd8-8b1f-5142a46a6614">Negotiations are left to the parties concerned and are performed outside the ITU-T, ITU-R, ISO, or IEC.</p>
+<p id="_623e60ea-3faf-495f-bdf4-3d86916f25aa">Also mark here __ if the Patent Holder&#x2019;s willingness to license is conditioned on Reciprocity for the above document.</p>
+<p id="_bee2bc14-bf05-485e-9acd-84afd64ead0f">[ ] 3. The Patent Holder is unwilling to grant licenses in accordance with provisions of either 1 or 2 above.</p>
+<p id="_fc05ba3c-3606-418e-9c55-8dca35642834">In this case, the following information must be provided to ITU, ISO and/or IEC as part of this declaration:</p>
+<ul id="_c096d0e8-4814-46ba-8a31-17a421105399">
+  <li>
+    <p id="_a57109f3-d355-459a-8b79-0b851e2a5882">granted patent number or patent application number (if pending);</p>
+  </li>
+  <li>
+    <p id="_89fb3dc4-ef3b-4a80-bcec-33b1b1491fc9">an indication of which portions of the above document are affected;</p>
+  </li>
+  <li>
+    <p id="_fe18ef34-9975-47c5-a557-79d72f342fce">a description of the Patents covering the above document.</p>
+    <dl id="_5f6bcb11-a565-4883-bb3e-0df19a95ba43"><dt><p>Free of Charge</p></dt><dd>
+    <p id="_26bf237f-fd4f-42be-b942-09511daf0177">The words "Free of Charge" do not mean that the Patent Holder is waiving all of its rights with respect to the Patent. Rather, "Free of Charge" refers to the issue of monetary compensation; i.e., that the Patent Holder will not seek any monetary compensation as part of the licensing arrangement (whether such compensation is called a royalty, a one-time licensing fee, etc.). However, while the Patent Holder in this situation is committing to not charging any monetary amount, the Patent Holder is still entitled to require that the implementer of the same above document sign a license agreement that contains other reasonable terms and conditions such as those relating to governing law, field of use, warranties, etc.</p>
+  </dd><dt><p>Reciprocity</p></dt><dd>
+    <p id="_4374a525-6693-4d5e-a655-554c432ef49b">The word "Reciprocity" means that the Patent Holder shall only be required to license any prospective licensee if such prospective licensee will commit to license its Patent(s) for implementation of the same above document Free of Charge or under reasonable terms and conditions.</p>
+  </dd><dt><p>Patent</p></dt><dd>
+    <p id="_5a8dbae7-228b-438e-a454-566bac4aacad">The word "Patent" means those claims contained in and identified by patents, utility models and other similar statutory rights based on inventions (including applications for any of these) solely to the extent that any such claims are essential to the implementation of the same above document. Essential patents are patents that would be required to implement a specific Recommendation | Deliverable.</p>
+  </dd><dt><p>Assignment/transfer of Patent rights</p></dt><dd>
+    <p id="_d5cad1a5-cc1a-4085-8169-57b2ff85a86d">Licensing declarations made pursuant to Clause 2.1 or 2.2 of the Common Patent Policy for ITU-T/ITU-R/ISO/IEC shall be interpreted as encumbrances that bind all successors-in-interest as to the transferred Patents. Recognizing that this interpretation may not apply in all jurisdictions, any Patent Holder who has submitted a licensing declaration according to the Common Patent Policy - be it selected as option 1 or 2 on the Patent Declaration form - who transfers ownership of a Patent that is subject to such licensing declaration shall include appropriate provisions in the relevant transfer documents to ensure that, as to such transferred Patent, the licensing declaration is binding on the transferee and that the transferee will similarly include appropriate provisions in the event of future transfers with the goal of binding all successors-in-interest.</p>
+  </dd></dl>
+  </li>
+</ul></div>
+        <div id="_patent_information"><h2>B.6. Patent Information</h2><p id="_f920a276-ca2c-4af0-8ead-03f2678db03a">(desired but not required for options 1 and 2; required in ITU, ISO and IEC for option 3 (NOTE))</p>
+<p class="TableTitle" align="center">Table B.2</p><table id="_9e91165c-31ca-44e7-ac5d-ac5c7b9d51a3" class="MsoISOTable" border="1" cellspacing="0" cellpadding="0"><thead><tr><th align="left" style="font-weight:bold;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;">No.</th><th align="left" style="font-weight:bold;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;">Status [granted/ pending]</th><th align="left" style="font-weight:bold;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;">Country</th><th align="left" style="font-weight:bold;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;">Granted Patent Number or Application Number (if pending)</th><th align="left" style="font-weight:bold;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;">Title</th></tr></thead><tbody><tr><td align="left" style="border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.0pt;">1</td><td align="left" style="border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.0pt;"></td><td align="left" style="border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.0pt;"></td><td align="left" style="border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.0pt;"></td><td align="left" style="border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.0pt;"></td></tr><tr><td align="left" style="border-top:none;border-bottom:solid windowtext 1.0pt;">2</td><td align="left" style="border-top:none;border-bottom:solid windowtext 1.0pt;"></td><td align="left" style="border-top:none;border-bottom:solid windowtext 1.0pt;"></td><td align="left" style="border-top:none;border-bottom:solid windowtext 1.0pt;"></td><td align="left" style="border-top:none;border-bottom:solid windowtext 1.0pt;"></td></tr><tr><td align="left" style="border-top:none;border-bottom:solid windowtext 1.0pt;">3</td><td align="left" style="border-top:none;border-bottom:solid windowtext 1.0pt;"></td><td align="left" style="border-top:none;border-bottom:solid windowtext 1.0pt;"></td><td align="left" style="border-top:none;border-bottom:solid windowtext 1.0pt;"></td><td align="left" style="border-top:none;border-bottom:solid windowtext 1.0pt;"></td></tr><tr><td align="left" style="border-top:none;border-bottom:solid windowtext 1.0pt;">4</td><td align="left" style="border-top:none;border-bottom:solid windowtext 1.0pt;"></td><td align="left" style="border-top:none;border-bottom:solid windowtext 1.0pt;"></td><td align="left" style="border-top:none;border-bottom:solid windowtext 1.0pt;"></td><td align="left" style="border-top:none;border-bottom:solid windowtext 1.0pt;"></td></tr><tr><td align="left" style="border-top:none;border-bottom:solid windowtext 1.0pt;">5</td><td align="left" style="border-top:none;border-bottom:solid windowtext 1.0pt;"></td><td align="left" style="border-top:none;border-bottom:solid windowtext 1.0pt;"></td><td align="left" style="border-top:none;border-bottom:solid windowtext 1.0pt;"></td><td align="left" style="border-top:none;border-bottom:solid windowtext 1.0pt;"></td></tr><tr><td align="left" style="border-top:none;border-bottom:solid windowtext 1.0pt;">6</td><td align="left" style="border-top:none;border-bottom:solid windowtext 1.0pt;"></td><td align="left" style="border-top:none;border-bottom:solid windowtext 1.0pt;"></td><td align="left" style="border-top:none;border-bottom:solid windowtext 1.0pt;"></td><td align="left" style="border-top:none;border-bottom:solid windowtext 1.0pt;"></td></tr><tr><td align="left" style="border-top:none;border-bottom:solid windowtext 1.0pt;">7</td><td align="left" style="border-top:none;border-bottom:solid windowtext 1.0pt;"></td><td align="left" style="border-top:none;border-bottom:solid windowtext 1.0pt;"></td><td align="left" style="border-top:none;border-bottom:solid windowtext 1.0pt;"></td><td align="left" style="border-top:none;border-bottom:solid windowtext 1.0pt;"></td></tr><tr><td align="left" style="border-top:none;border-bottom:solid windowtext 1.0pt;">8</td><td align="left" style="border-top:none;border-bottom:solid windowtext 1.0pt;"></td><td align="left" style="border-top:none;border-bottom:solid windowtext 1.0pt;"></td><td align="left" style="border-top:none;border-bottom:solid windowtext 1.0pt;"></td><td align="left" style="border-top:none;border-bottom:solid windowtext 1.0pt;"></td></tr><tr><td align="left" style="border-top:none;border-bottom:solid windowtext 1.0pt;">9</td><td align="left" style="border-top:none;border-bottom:solid windowtext 1.0pt;"></td><td align="left" style="border-top:none;border-bottom:solid windowtext 1.0pt;"></td><td align="left" style="border-top:none;border-bottom:solid windowtext 1.0pt;"></td><td align="left" style="border-top:none;border-bottom:solid windowtext 1.0pt;"></td></tr><tr><td align="left" style="border-top:none;border-bottom:solid windowtext 1.5pt;">10</td><td align="left" style="border-top:none;border-bottom:solid windowtext 1.5pt;"></td><td align="left" style="border-top:none;border-bottom:solid windowtext 1.5pt;"></td><td align="left" style="border-top:none;border-bottom:solid windowtext 1.5pt;"></td><td align="left" style="border-top:none;border-bottom:solid windowtext 1.5pt;"></td></tr></tbody></table>
+<p id="_a702ed44-8379-455d-8f2a-a83eb8ec9bb4">[ ] Check here if additional patent information is provided on additional pages.</p>
+<div id="_95374ba1-af5d-4923-8f69-a44ddc5a2920" class="Note"><p><span class="note_label">NOTE</span>&#xA0; For option 3, the additional minimum information that shall also be provided is listed in the option 3 box above.</p></div></div>
+        <div id="_signature_include_on_final_page_only"><h2>B.7. Signature (include on final page only)</h2><ul id="_00204a58-e08e-49fa-9dc3-b4de34a5032e">
+  <li>
+    <p id="_c6d025a9-692c-4509-ad4b-01a68b5aba7f">Patent Holder __________________________</p>
+  </li>
+  <li>
+    <p id="_36eb900b-3855-4286-9ca9-1ad8db556d2c">Name of authorized person __________________________</p>
+  </li>
+  <li>
+    <p id="_f916c93b-d417-4b69-a419-3fb5486d3ecd">Title of authorized person __________________________</p>
+  </li>
+  <li>
+    <p id="_a9bebda5-95d1-48fc-aaee-e1c15710a08e">Signature, Place, Date __________________________</p>
+  </li>
+</ul>
+<p id="_45473253-6b68-4939-855f-b5e8a17bffb0">FORM: 2 November 2018</p></div>
+      </div>
+      <br />
+      <div id="_general_patent_statement_and_licensing_declaration_form_for_itu_t_or_itu_r_recommendation" class="Section3">
+        <h1 class="Annex"><b>Appendix C</b><br />(normative) <br /><b>General Patent Statement and Licensing Declaration Form for ITU-T or ITU-R Recommendation</b></h1>
+        <p id="_24c35cfa-6dae-4abb-a5b5-381f66c14232">
+  <i>This declaration does not represent an actual grant of a license</i>
+</p>
+        <p id="_aff2d816-98b1-440d-b01b-555e05d1a9d3">Please return to the relevant bureau:</p>
+        <p class="TableTitle" align="center">Table C.1</p>
+        <table id="_47fa2c9a-e44e-4b95-b166-5c1ca47758af" class="MsoISOTable" border="1" cellspacing="0" cellpadding="0">
+          <tbody>
+            <tr>
+              <td align="left" style="border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;"><p id="_4f6abd4c-aff3-41d7-83b4-b86ce00a0f7a">Director</p>
+<p id="_87bc408a-70db-4601-9224-f823589bd03d">Telecommunication Standardization Bureau</p>
+<p id="_c1dfe41f-6719-4b15-ab0b-ce800695e86f">International Telecommunication Union</p>
+<p id="_60ec4a77-eb6f-4186-a590-df3f544fd97b">Place des Nations</p>
+<p id="_66f11dee-ce11-4ee8-b260-4e61373c4d4b">CH-1211 Geneva 20, Switzerland</p>
+<p id="_5740b6ff-9999-4b6d-95b3-1dd592d8e858">Fax: +41 22 730 5853</p>
+<p id="_9caabf20-0240-4316-bef9-41b11010295f">Email: <a href="mailto:tsbdir@itu.int">tsbdir@itu.int</a></p></td>
+              <td align="left" style="border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;"><p id="_ea1aacd6-0e55-486e-879e-d9ad7075d3ca">Director</p>
+<p id="_8616a0a6-f13c-4977-aaa9-183a75e9e9e0">Radiocommunication Bureau</p>
+<p id="_56edb0f2-5fa0-455f-8408-5849ec2346b0">International Telecommunication Union</p>
+<p id="_84ba1b7d-6eb8-4d28-904b-c9cdf2476711">Place des Nations</p>
+<p id="_3868c7bf-8d61-4b5e-873b-554474a9f7cc">CH-1211 Geneva 20, Switzerland</p>
+<p id="_edd01ccb-f318-44fa-92e3-9085bee086be">Fax: +41 22 730 5785</p>
+<p id="_99483fb5-7107-4759-8da1-59bd39235399">Email: <a href="mailto:brmail@itu.int">brmail@itu.int</a></p></td>
+            </tr>
+          </tbody>
+        </table>
+        <div id="_patent_holder_2"><h2>C.1. Patent Holder</h2>
+
+  <ul id="_eaa5707c-1972-474c-b95f-16459b24b829">
+  <li>
+    <p id="_cd917277-54bd-4002-811e-fc6aae56a0ca">Legal Name __________________________</p>
+  </li>
+</ul>
+</div>
+        <div id="_contact_for_license_application_2"><h2>C.2. Contact for license application</h2>
+
+  <ul id="_2e0793b3-d1ea-47c6-b6ec-3c9885109c53">
+  <li>
+    <p id="_77155157-3b3e-4865-8a3a-55f3d4338f4d">Name &amp; Department __________________________</p>
+  </li>
+  <li>
+    <p id="_4e865027-17b0-4edb-aed3-4d38b1c20e8d">Address __________________________</p>
+  </li>
+  <li>
+    <p id="_0b8330db-690b-4ffd-b452-00cf2177d7aa">Tel. __________________________</p>
+  </li>
+  <li>
+    <p id="_db349f25-5a5e-4c63-bc97-9d65ea3eb987">Fax __________________________</p>
+  </li>
+  <li>
+    <p id="_015acf8d-9656-4865-8db6-7393a4c34727">E-mail __________________________</p>
+  </li>
+  <li>
+    <p id="_7b32aed8-92c7-4717-a226-52fd53c45c60">URL (optional) __________________________</p>
+  </li>
+</ul>
+</div>
+        <div id="_licensing_declaration_2"><h2>C.3. Licensing declaration</h2><p id="_c4b26bb0-7e71-4def-91c6-a88e64b9e922">In case part(s) or all of any proposals contained in Contributions submitted by the Patent Holder above are included in ITU-T/ITU-R Recommendation(s) and the included part(s) contain items for which Patents have been filed and whose use would be required to implement ITU-T/ITU-R Recommendation(s), the above Patent Holder hereby declares, in accordance with the Common Patent Policy for ITU-T/ITU-R/ISO/IEC (check one box only):</p>
+<p id="_fbd8d686-4643-4244-b0b3-ff7b9b74e253">[ ] 1. The Patent Holder is prepared to grant a Free of Charge license to an unrestricted number of applicants on a worldwide, non-discriminatory basis and under other reasonable terms and conditions to make, use, and sell implementations of the relevant ITU-T/ITU-R Recommendation.</p>
+<p id="_cfdbfce5-b3c4-49a4-ab98-22933aac940e">Negotiations are left to the parties concerned and are performed outside the ITU-T/ITU-R.</p>
+<p id="_0870fc3a-1391-4918-a57e-b9468c096ca3">Also mark here __ if the Patent Holder&#x2019;s willingness to license is conditioned on Reciprocity for the above ITU-T/ITU-R Recommendation.</p>
+<p id="_1da79eb3-ebf0-45ec-8102-a8a37a68c387">Also mark here __ if the Patent Holder reserves the right to license on reasonable terms and conditions (but not Free of Charge) to applicants who are only willing to license their patent claims, whose use would be required to implement the above ITU-T/ITU-R Recommendation, on reasonable terms and conditions (but not Free of Charge).</p>
+<p id="_06e8f6b7-759f-4216-9619-f18c251df8f8">[ ] 2. The Patent Holder is prepared to grant a license to an unrestricted number of applicants on a worldwide, non-discriminatory basis and on reasonable terms and conditions to make, use and sell implementations of the relevant ITU-T/ITU-R Recommendation.</p>
+<p id="_3feeb28c-63b5-4de1-a114-87522a285b43">Negotiations are left to the parties concerned and are performed outside the ITU-T/ITU-R.</p>
+<p id="_7f8ab9eb-0e64-418d-92fa-ee4cec153d8c">Also mark here __ if the Patent Holder&#x2019;s willingness to license is conditioned on Reciprocity for the above ITU-T/ITU-R Recommendation.</p>
+<dl id="_05bb4acb-af1f-489d-9a8f-5bb32dfaffd7"><dt><p>Free of Charge</p></dt><dd>
+    <p id="_870f578c-4dc4-4886-8054-955d8a5e68c5">The words "Free of Charge" do not mean that the Patent Holder is waiving all of its rights with respect to the Patent. Rather, "Free of Charge" refers to the issue of monetary compensation; i.e., that the Patent Holder will not seek any monetary compensation as part of the licensing arrangement (whether such compensation is called a royalty, a one-time licensing fee, etc.). However, while the Patent Holder in this situation is committing to not charging any monetary amount, the Patent Holder is still entitled to require that the implementer of the relevant ITU-T/ITU-R Recommendation sign a license agreement that contains other reasonable terms and conditions such as those relating to governing law, field of use, warranties, etc.</p>
+  </dd><dt><p>Reciprocity</p></dt><dd>
+    <p id="_7811c5c4-8381-4aae-9969-b7aba5f9d9da">The word "Reciprocity" means that the Patent Holder shall only be required to license any prospective licensee if such prospective licensee will commit to license its Patent(s) for implementation of the relevant ITU-T/ITU-R Recommendation Free of Charge or under reasonable terms and conditions.</p>
+  </dd><dt><p>Patent</p></dt><dd>
+    <p id="_8fdef962-e461-4106-b4e2-0f5a9a02b591">The word "Patent" means those claims contained in and identified by patents, utility models and other similar statutory rights based on inventions (including applications for any of these) solely to the extent that any such claims are essential to the implementation of the relevant Recommendation | Deliverable. Essential patents are patents that would be required to implement a specific Recommendation | Deliverable.</p>
+  </dd><dt><p>Assignment/transfer of Patent rights</p></dt><dd>
+    <p id="_265d1930-cca0-4e64-a70a-367b4ae32614">Licensing declarations made pursuant to Clause 2.1 or 2.2 of the Common Patent Policy for ITU-T/ITU-R/ISO/IEC shall be interpreted as encumbrances that bind all successors-in-interest as to the transferred Patents. Recognizing that this interpretation may not apply in all jurisdictions, any Patent Holder who has submitted a licensing declaration according to the Common Patent Policy - be it selected as option 1 or 2 on the Patent Declaration form - who transfers ownership of a Patent that is subject to such licensing declaration shall include appropriate provisions in the relevant transfer documents to ensure that, as to such transferred Patent, the licensing declaration is binding on the transferee and that the transferee will similarly include appropriate provisions in the event of future transfers with the goal of binding all successors-in-interest.</p>
+  </dd></dl></div>
+        <div id="_signature"><h2>C.4. Signature</h2><ul id="_d3be8f15-a591-43f1-bcde-9b44c0afeb94">
+  <li>
+    <p id="_8efa6a16-2d6b-4ed2-81f6-b63f72c3e0c1">Patent Holder __________________________</p>
+  </li>
+  <li>
+    <p id="_dbbcdeb2-460b-41b0-b4dd-738c489d1a72">Name of authorized person __________________________</p>
+  </li>
+  <li>
+    <p id="_1e6730af-cb35-4a99-8668-ae2c64fd7e6a">Title of authorized person __________________________</p>
+  </li>
+  <li>
+    <p id="_d40811cb-768c-4501-b11d-561a013ce774">Signature, Place, Date __________________________</p>
+  </li>
+</ul>
+<p id="_cef84ae4-98fe-4a67-b957-1bb7c500f89d">Published in Switzerland</p>
+<p id="_cae0f454-2aa1-4aa8-82ed-fb02886d206f">GENEVA, 2018</p></div>
+      </div>
+      <aside id="fn:1" class="footnote">
+  <p id="_f7d0f10e-4eaf-4e48-90b0-cccb48fb0283"><a rel="footnote" href="#fn:1" epub:type="footnote" id="fnref:1"><sup>1</sup></a>In the case of ISO and IEC, this includes any recipient of a draft standard at any stage in the standards development process.</p>
+<a href="#fnref:1">&#x21A9;</a></aside>
+    </main>
+  <script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    asciimath2jax: {
+      delimiters: [['(#(', ')#)']]
+    }
+ });
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=AM_HTMLorMML"></script>
+<script>
+    //TOC generation
+      $('#toc').toc({
+          'selectors': 'h1,h2:not(.TermNum)', //elements to use as headings
+          'container': 'main', //element to find all selectors in
+          'smoothScrolling': true, //enable or disable smooth scrolling on click
+          'prefix': 'toc', //prefix for anchor tags and class names
+          'onHighlight': function(el) {}, //called when a new section is highlighted 
+          'highlightOnScroll': true, //add class to heading that is currently in focus
+          'highlightOffset': 100, //offset to trigger the next headline
+          'anchorName': function(i, heading, prefix) { //custom function for anchor name
+              return prefix+i;
+          },
+          'headerText': function(i, heading, $heading) { //custom function building the header-item text
+              return $heading.text();
+          },
+      'itemClass': function(i, heading, $heading, prefix) { // custom function for item class
+        return $heading[0].tagName.toLowerCase();
+      }
+      });
+      
+  </script>
+
+<script>
+  //TOC toggle animation
+$('#toggle').on('click', function(){
+    if( $('nav').is(':visible') ) {
+        $('nav').animate({ 'left': '-353px' }, 'slow', function(){
+            $('nav').hide();
+        });
+        $('.container').animate({ 'padding-left': '31px' }, 'slow');
+    }
+    else {
+        $('nav').show();
+        $('nav').animate({ 'left': '0px' }, 'slow');
+        $('.container').animate({ 'padding-left': '360px' }, 'slow');
+    }
+});
+</script>
+
+<script>
+    // Scroll to top button
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+            document.getElementById("myBtn").style.display = "block";
+        } else {
+            document.getElementById("myBtn").style.display = "none";
+        }
+    }
+    
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+    </script>
+
+  <script>
+/**
+ * AnchorJS - v4.1.0 - 2017-09-20
+ * https://github.com/bryanbraun/anchorjs
+ * Copyright (c) 2017 Bryan Braun; Licensed MIT
+ */
+!function(A,e){"use strict";"function"==typeof define&&define.amd?define([],e):"object"==typeof module&&module.exports?module.exports=e():(A.AnchorJS=e(),A.anchors=new A.AnchorJS)}(this,function(){"use strict";return function(A){function e(A){A.icon=A.hasOwnProperty("icon")?A.icon:"",A.visible=A.hasOwnProperty("visible")?A.visible:"hover",A.placement=A.hasOwnProperty("placement")?A.placement:"right",A.ariaLabel=A.hasOwnProperty("ariaLabel")?A.ariaLabel:"Anchor",A.class=A.hasOwnProperty("class")?A.class:"",A.truncate=A.hasOwnProperty("truncate")?Math.floor(A.truncate):64}function t(A){var e;if("string"==typeof A||A instanceof String)e=[].slice.call(document.querySelectorAll(A));else{if(!(Array.isArray(A)||A instanceof NodeList))throw new Error("The selector provided to AnchorJS was invalid.");e=[].slice.call(A)}return e}function i(){if(null===document.head.querySelector("style.anchorjs")){var A,e=document.createElement("style");e.className="anchorjs",e.appendChild(document.createTextNode("")),void 0===(A=document.head.querySelector('[rel="stylesheet"], style'))?document.head.appendChild(e):document.head.insertBefore(e,A),e.sheet.insertRule(" .anchorjs-link {   opacity: 0;   text-decoration: none;   -webkit-font-smoothing: antialiased;   -moz-osx-font-smoothing: grayscale; }",e.sheet.cssRules.length),e.sheet.insertRule(" *:hover > .anchorjs-link, .anchorjs-link:focus  {   opacity: 1; }",e.sheet.cssRules.length),e.sheet.insertRule(" [data-anchorjs-icon]::after {   content: attr(data-anchorjs-icon); }",e.sheet.cssRules.length),e.sheet.insertRule(' @font-face {   font-family: "anchorjs-icons";   src: url(data:n/a;base64,AAEAAAALAIAAAwAwT1MvMg8yG2cAAAE4AAAAYGNtYXDp3gC3AAABpAAAAExnYXNwAAAAEAAAA9wAAAAIZ2x5ZlQCcfwAAAH4AAABCGhlYWQHFvHyAAAAvAAAADZoaGVhBnACFwAAAPQAAAAkaG10eASAADEAAAGYAAAADGxvY2EACACEAAAB8AAAAAhtYXhwAAYAVwAAARgAAAAgbmFtZQGOH9cAAAMAAAAAunBvc3QAAwAAAAADvAAAACAAAQAAAAEAAHzE2p9fDzz1AAkEAAAAAADRecUWAAAAANQA6R8AAAAAAoACwAAAAAgAAgAAAAAAAAABAAADwP/AAAACgAAA/9MCrQABAAAAAAAAAAAAAAAAAAAAAwABAAAAAwBVAAIAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAMCQAGQAAUAAAKZAswAAACPApkCzAAAAesAMwEJAAAAAAAAAAAAAAAAAAAAARAAAAAAAAAAAAAAAAAAAAAAQAAg//0DwP/AAEADwABAAAAAAQAAAAAAAAAAAAAAIAAAAAAAAAIAAAACgAAxAAAAAwAAAAMAAAAcAAEAAwAAABwAAwABAAAAHAAEADAAAAAIAAgAAgAAACDpy//9//8AAAAg6cv//f///+EWNwADAAEAAAAAAAAAAAAAAAAACACEAAEAAAAAAAAAAAAAAAAxAAACAAQARAKAAsAAKwBUAAABIiYnJjQ3NzY2MzIWFxYUBwcGIicmNDc3NjQnJiYjIgYHBwYUFxYUBwYGIwciJicmNDc3NjIXFhQHBwYUFxYWMzI2Nzc2NCcmNDc2MhcWFAcHBgYjARQGDAUtLXoWOR8fORYtLTgKGwoKCjgaGg0gEhIgDXoaGgkJBQwHdR85Fi0tOAobCgoKOBoaDSASEiANehoaCQkKGwotLXoWOR8BMwUFLYEuehYXFxYugC44CQkKGwo4GkoaDQ0NDXoaShoKGwoFBe8XFi6ALjgJCQobCjgaShoNDQ0NehpKGgobCgoKLYEuehYXAAAADACWAAEAAAAAAAEACAAAAAEAAAAAAAIAAwAIAAEAAAAAAAMACAAAAAEAAAAAAAQACAAAAAEAAAAAAAUAAQALAAEAAAAAAAYACAAAAAMAAQQJAAEAEAAMAAMAAQQJAAIABgAcAAMAAQQJAAMAEAAMAAMAAQQJAAQAEAAMAAMAAQQJAAUAAgAiAAMAAQQJAAYAEAAMYW5jaG9yanM0MDBAAGEAbgBjAGgAbwByAGoAcwA0ADAAMABAAAAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAH//wAP) format("truetype"); }',e.sheet.cssRules.length)}}this.options=A||{},this.elements=[],e(this.options),this.isTouchDevice=function(){return!!("ontouchstart"in window||window.DocumentTouch&&document instanceof DocumentTouch)},this.add=function(A){var n,o,s,a,r,c,h,l,u,d,f,p=[];if(e(this.options),"touch"===(f=this.options.visible)&&(f=this.isTouchDevice()?"always":"hover"),A||(A="h2, h3, h4, h5, h6"),0===(n=t(A)).length)return this;for(i(),o=document.querySelectorAll("[id]"),s=[].map.call(o,function(A){return A.id}),r=0;r<n.length;r++)if(this.hasAnchorJSLink(n[r]))p.push(r);else{if(n[r].hasAttribute("id"))a=n[r].getAttribute("id");else if(n[r].hasAttribute("data-anchor-id"))a=n[r].getAttribute("data-anchor-id");else{u=l=this.urlify(n[r].textContent),h=0;do{void 0!==c&&(u=l+"-"+h),c=s.indexOf(u),h+=1}while(-1!==c);c=void 0,s.push(u),n[r].setAttribute("id",u),a=u}a.replace(/-/g," "),(d=document.createElement("a")).className="anchorjs-link "+this.options.class,d.href="#"+a,d.setAttribute("aria-label",this.options.ariaLabel),d.setAttribute("data-anchorjs-icon",this.options.icon),"always"===f&&(d.style.opacity="1"),""===this.options.icon&&(d.style.font="1em/1 anchorjs-icons","left"===this.options.placement&&(d.style.lineHeight="inherit")),"left"===this.options.placement?(d.style.position="absolute",d.style.marginLeft="-1em",d.style.paddingRight="0.5em",n[r].insertBefore(d,n[r].firstChild)):(d.style.paddingLeft="0.375em",n[r].appendChild(d))}for(r=0;r<p.length;r++)n.splice(p[r]-r,1);return this.elements=this.elements.concat(n),this},this.remove=function(A){for(var e,i,n=t(A),o=0;o<n.length;o++)(i=n[o].querySelector(".anchorjs-link"))&&(-1!==(e=this.elements.indexOf(n[o]))&&this.elements.splice(e,1),n[o].removeChild(i));return this},this.removeAll=function(){this.remove(this.elements)},this.urlify=function(A){var t=/[& +$,:;=?@"#{}|^~[`%!'<>\]\.\/\(\)\*\\]/g;return this.options.truncate||e(this.options),A.trim().replace(/\'/gi,"").replace(t,"-").replace(/-{2,}/g,"-").substring(0,this.options.truncate).replace(/^-+|-+$/gm,"").toLowerCase()},this.hasAnchorJSLink=function(A){var e=A.firstChild&&(" "+A.firstChild.className+" ").indexOf(" anchorjs-link ")>-1,t=A.lastChild&&(" "+A.lastChild.className+" ").indexOf(" anchorjs-link ")>-1;return e||t||!1}}});  </script>
+
+  <script>
+  $(document).ready(function() {
+          $('[id^=toc]').each(function ()
+          {
+             var currentToc = $(this);
+       var url = window.location.href;
+             currentToc.wrap("<a href='" + url + "#" + currentToc.attr("id") + "' </a>");
+          });
+});
+  anchors.options = {
+  placement: 'left'
+};
+anchors.add('h1, h2, h3, h4');
+</script></body>
+</html>
