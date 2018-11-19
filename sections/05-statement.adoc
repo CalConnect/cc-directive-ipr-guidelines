@@ -2,38 +2,83 @@
 [[patent-statement]]
 == Patent statement and licensing declaration form
 
-=== Purpose of the declaration Form
+=== Purpose
 
-To provide clear information in the Patent Information databases of each Organization, Patent Holders have to use the Declaration Form, which is available on the web site of each Organization (the Declaration Form is included in Annex 2 for information purposes). They must be sent to the Organizations for the attention, for ITU, of the Directors of the TSB or the BR or, for ISO or IEC, of the CEOs. The purpose of the Declaration Form is to ensure a standardized submission to the respective Organizations of the declarations being made by Patent Holders.
+The patent statement and licensing declaration form is provided
+for entities with information on how relavent patents affect
+CalConnect deliverables (such as, patent holders)
+to provide accurate information in the CalConnect patent
+information database.
 
-The Declaration Form gives Patent Holders the means of making a licensing declaration relative to rights in Patents required for implementation of a specific Recommendation | Deliverable. Specifically, by submitting this Declaration Form the submitting party declares its willingness to license (by selecting option 1 or 2 on the Form) /or its unwillingness to license (by selecting option 3 on the Form), according to the Patent Policy, Patents held by it and whose licence would be required to practice or implement part(s) or all of a specific Recommendation | Deliverable.
+=== Procedure
 
-If a Patent Holder has selected the licensing option 3 on the Declaration Form, then, for the referenced relevant ITU Recommendation and ISO or IEC Deliverable, the ITU, ISO and IEC require the Patent Holder to provide certain additional information permitting patent identification.
+Entities who wish to report patent information to CalConnect
+shall use the CalConnect patent declaration form, which is available on the CalConnect website (see <<patent-form>> for illustration purposes).
 
-Multiple Declaration Forms are appropriate if the Patent Holder wishes to identify several Patents and classifies them in different options of the Declaration Form for the same Recommendation | Deliverable or if the Patent Holder classifies different claims of a complex patent in different options of the Declaration Form.
+The completed declaration form should be directly submitted
+to the designated contact provided on the form.
 
-Information contained in a Declaration Form may be corrected in case of obvious errors, such as a typographical mistake in a standard or patent reference number. The licensing declaration contained in the Declaration Form remains in force unless it is superseded by another Declaration Form containing more favourable licensing terms and conditions from a licensee's perspective reflecting (a) a change in commitment from option 3 to either option 1 or option 2, (b) a change in commitment from option 2 to option 1 or (c) un-checking one or more sub-options contained within option 1 or 2.
+The declaration form also allows patent holders to make a licensing declaration relative to rights in patents required for implementation of a specific deliverable.
+
+
+=== Declaration of patent license
+
+Specifically, by submitting this declaration form, the submitting party declares, in accordance with the CalConnect patent policy, patents held by it and whose licence would be required to practice or implement part(s) or all of a specific deliverable:
+
+. its willingness to license (by selecting option 1 or 2 on the Form); or . its unwillingness to license (by selecting option 3 on the Form).
+
+
+=== Additional information required due to unwillingness to license
+
+If a patent holder has selected the licensing option 3 on the declaration form, then, for the referenced relevant CalConnect deliverable, CalConnect requires the patent holder to provide certain additional information permitting patent identification.
+
+Multiple declaration forms are appropriate if the patent holder wishes to identify several patents and classifies them in different options of the declaration form for the same deliverable or if the patent holder classifies different claims of a complex patent in different options of the declaration form.
+
+Information contained in a declaration form may be corrected in case of obvious errors, such as a typographical mistake in a standard or patent reference number.
+
+=== Superseding license declarations
+
+The licensing declaration contained in the declaration form remains in force unless it is superseded by another declaration form containing more favorable licensing terms and conditions from a licensee's perspective reflecting:
+
+. a change in commitment from option 3 to either option 1 or option 2;
+. a change in commitment from option 2 to option 1; or
+. un-checking one or more sub-options contained within option 1 or 2.
 
 ==== Contact information
 
-In completing Declaration Forms, attention should be given to supplying contact information that will remain valid over time. Where possible, the "Name and Department" and e-mail address should be generic. Also it is preferable, where possible, that parties, particularly multinational organizations, indicate the same contact point on all Declaration Forms submitted.
+In completing declaration forms, attention should be given to supplying contact information that will remain valid over time:
 
-With a view to maintaining up-to-date information in the Patent Information database of each Organization, it is requested that the Organizations be informed of any change or corrections to the Declaration Form submitted in the past, especially with regard to the contact person.
+* "`Name`", "`Department`" and "`E-mail addresses`" should be generic.
+
+* A single point of contact for a particular submitting party is preferred if multiple declaration forms are submitted (particularly for multinational organizations).
+
+For maintaining the currency of information in the CalConnect patent information database, the patent declarer is urged to directly contact CalConnect on any change or corrections to declaration forms submitted,
+especially on the change of contact points.
 
 === Conduct of meetings
 
-Early disclosure of Patents contributes to the efficiency of the process by which Recommendations | Deliverables are established. Therefore, each Technical Body, in the course of the development of a proposed Recommendation | Deliverable, will request the disclosure of any known Patents essential to the proposed Recommendation | Deliverable.
+Early disclosure of patents contributes to the efficiency of the process by which deliverables are established.
 
-Chairmen of Technical Bodies will, if appropriate, ask, at an appropriate time in each meeting, whether anyone has knowledge of patents, the use of which may be required to practice or implement the Recommendation | Deliverable being considered. The fact that the question was asked shall be recorded in the meeting report, along with any affirmative responses.
+Therefore, each technical body, in the course of the development of a proposed deliverable, will request the disclosure of any known patents essential to the proposed deliverable.
 
-As long as the Organization concerned has received no indication of a Patent Holder selecting paragraph 2.3 of the Patent Policy, the Recommendation | Deliverable may be approved using the appropriate and respective rules of the Organization concerned. It is expected that discussions in Technical Bodies will include consideration of including patented material in a Recommendation | Deliverable, however the Technical Bodies may not take position regarding the essentiality, scope, validity or specific licensing terms of any claimed Patents.
+The leadership of technical body will, ask at an appropriate time in each meeting, whether anyone has knowledge of patents, the use of which may be required to practice or implement the deliverable being considered. The fact that the question was asked shall be recorded in the meeting report, along with any affirmative responses.
+
+As long as CalConnect has received no indication of a patent holder selecting <<CC10003,clause=2.3>>, the deliverable may be approved with normal procedure. It is expected that discussions in technical bodies will include consideration of including patented material in a deliverable, however the technical bodies may not take position regarding the essentiality, scope, validity or specific licensing terms of any claimed patents.
 
 === Patent information database
 
-In order to facilitate both the standards-making process and the application of Recommendations | Deliverables, each Organization makes available to the public a Patent Information database composed of information that was communicated to the Organizations by the means of Declaration Forms. The Patent Information database may contain information on specific patents, or may contain no such information but rather a statement about compliance with the Patent Policy for a particular Recommendation | Deliverable.
+In order to facilitate both the standards-making process and the application of deliverables, CalConnect makes available to the public a patent information database composed of information that was communicated to CalConnect by the means of declaration forms.
 
-The Patent Information databases are not certified to be either accurate or complete, but only reflect the information that has been communicated to the Organizations. As such, the Patent Information databases may be viewed as simply raising a flag to alert users that they may wish to contact the entities who have communicated Declaration Forms to the Organizations in order to determine if patent licenses must be obtained for use or implementation of a particular Recommendation | Deliverable.
+The patent information databases may contain information on specific patents, or may contain no such information but rather a statement about compliance with the patent policy for a particular deliverable.
+
+The patent information databases are not certified to be either accurate or complete, but only reflect the information that has been communicated to CalConnect.
+
+As such, the patent information databases may be viewed as simply raising a flag to alert users that they may wish to contact the entities who have communicated declaration forms to CalConnect in order to determine if patent licenses must be obtained for use or implementation of a particular deliverable.
 
 === Assignment or transfer of patent rights
 
-The rules governing the assignment or transfer of Patent rights are contained in the patent statement and licensing declaration forms (see Annexes 2 and 3). By complying with these rules, the Patent Holder has discharged in full all of its obligations and liability with regards to the licensing commitments after the transfer or assignment. These rules are not intended to place any duty on the Patent Holder to compel compliance with the licensing commitment by the assignee or transferee after the transfer occurs.
+The rules governing the assignment or transfer of patent rights are contained in the patent statement and licensing declaration forms (see <<patent-form>>).
+
+By complying with these rules, the patent holder has discharged in full all of its obligations and liability with regards to the licensing commitments after the transfer or assignment.
+
+These rules are not intended to place any duty on the patent holder to compel compliance with the licensing commitment by the assignee or transferee after the transfer occurs.

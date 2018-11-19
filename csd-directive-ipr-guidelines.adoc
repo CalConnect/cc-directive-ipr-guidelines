@@ -1,5 +1,5 @@
-= CalConnect Directive: Guidelines for the implementation of the CalConnect Patent Policy
-:title: Guidelines for the implementation of the CalConnect Patent Policy
+= CalConnect Directive: Guidelines for the implementation of the CalConnect patent policy
+:title: Guidelines for the implementation of the CalConnect patent policy
 :docnumber: 10005
 :copyright-year: 2018
 :language: en

@@ -2,17 +2,67 @@
 [[patent-disclosure]]
 == Patent disclosure
 
-As mandated by the Patent Policy in its paragraph 1, any party participating footnote:[In the case of ISO and IEC, this includes any recipient of a draft standard at any stage in the standards development process.] in the work of the Organizations should, from the outset, draw their attention to any known Patent or to any known pending Patent application, either its own or that of other organizations.
 
-In this context, the words "from the outset" imply that such information should be disclosed as early as possible during the development of the Recommendation | Deliverable. This might not be possible when the first draft text appears since at this time, the text might be still too vague or subject to subsequent major modifications. Moreover, that information should be provided in good faith and on a best effort basis, but there is no requirement for patent searches.
+=== General
 
-In addition to the above, any party not participating in Technical Bodies may draw the attention of the Organizations to any known Patent, either their own and/or of any third-party.
+This clause describes the principles of patent disclosure
+of patents that may affect standardization deliverables produced
+by CalConnect.
 
-When disclosing their own Patents, Patent Holders have to use the Patent Statement and Licensing Declaration Form (referred to as the "Declaration Form") as stated in Section 4 of these Guidelines.
+This clause applies to any patent disclosed or drawn
+to the attention of CalConnect during the development
+of and subsequent to the approval of deliverables.
+
+=== Requirements
+
+==== Participation obligation
+
+All parties participating in the standardization activities of CalConnect
+are obligated to inform CalConnect of
+any known patent or to any known pending patent application,
+as mandated by <<CC10003,clause=1>>
+
+Where such parties include recipients of a draft deliverable at any stage,
+and the patent or patent application could be of the party's own or
+that of other entities.
+
+==== Early disclosure
+
+Patent information should be disclosed as early as possible during the development of the deliverable.
+
+Such patent information should be provided in good faith and on a best effort basis.
+
+NOTE: This might not be possible when the first draft text appears since at this time, the text might be still too vague or subject to subsequent major modifications.
+
+NOTE: There is no requirement for patent searches.
+
+==== External-originating disclosure
+
+Parties not participating in the standardization activities of CalConnect may also inform CalConnect to any known patent, either their own and/or of any third-party, that may cover a CalConnect deliverable.
 
 
-Any communication drawing the attention to any third-party Patent should be addressed to the concerned Organization(s) in writing. The potential Patent Holder will then be requested by the Director/CEO of the relevant Organization(s) to submit a Declaration Form, if applicable.
+=== Method of disclosure
 
-The Patent Policy and these Guidelines also apply to any Patent disclosed or drawn to the attention of the Organizations subsequent to the approval of a Recommendation | Deliverable.
+==== Declaration form
 
-Whether the identification of the Patent took place before or after the approval of the Recommendation | Deliverable, if the Patent Holder is unwilling to license under paragraph 2.1 or 2.2 of the Patent Policy, the Organizations will promptly advise the Technical Bodies responsible for the affected Recommendation | Deliverable so that appropriate action can be taken. Such action will include, but may not be limited to, a review of the Recommendation | Deliverable or its draft in order to remove the potential conflict or to further examine and clarify the technical considerations causing the conflict.
+When disclosing their own patents, patent holders shall fill in the "`Patent Statement and Licensing Declaration Form`" (referred to as the "`declaration form`") as stated in <<patent-form>>.
+
+==== Third-party patent disclosure
+
+Any communication drawing the attention to any third-party patent
+should be addressed to CalConnect in writing.
+
+The Executive Director of CalConnect will then request the potential
+patent holder to submit a declaration form, if applicable.
+
+
+=== Resolution to discriminatory licensing
+
+If a patent holder is unwilling to license under <<CC10003,clause=2.1>> or <<CC10003,clause=2.2>>, CalConnect will promptly advise the project owner(s) responsible for the affected deliverable so that appropriate action can be taken.
+
+Such action shall include, but may not be limited to:
+
+* a review of the deliverable or its draft in order to remove the potential conflict; or
+* to further examine and clarify the technical considerations causing the conflict.
+
+NOTE: This clause does not differentiate whether identification of the patent took place before or after the approval of the deliverable.
