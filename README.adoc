@@ -4,7 +4,7 @@
 
 This work item belongs to TC PUBLISH.
 
-image:https://travis-ci.com/calconnect/csd-directive-ipr-guidelines.svg?branch=master["Build Status", link="https://travis-ci.com/calconnect/csd-directive-ipr-guidelines"]
+image:https://travis-ci.com/CalConnect/csd-directive-ipr-guidelines.svg?branch=master["Build Status", link="https://travis-ci.com/calconnect/csd-directive-ipr-guidelines"]
 
 This document is available in its rendered forms here:
 
