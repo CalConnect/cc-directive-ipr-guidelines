@@ -1,0 +1,39 @@
+
+[[patent-statement]]
+== Patent statement and licensing declaration form
+
+=== Purpose of the declaration Form
+
+To provide clear information in the Patent Information databases of each Organization, Patent Holders have to use the Declaration Form, which is available on the web site of each Organization (the Declaration Form is included in Annex 2 for information purposes). They must be sent to the Organizations for the attention, for ITU, of the Directors of the TSB or the BR or, for ISO or IEC, of the CEOs. The purpose of the Declaration Form is to ensure a standardized submission to the respective Organizations of the declarations being made by Patent Holders.
+
+The Declaration Form gives Patent Holders the means of making a licensing declaration relative to rights in Patents required for implementation of a specific Recommendation | Deliverable. Specifically, by submitting this Declaration Form the submitting party declares its willingness to license (by selecting option 1 or 2 on the Form) /or its unwillingness to license (by selecting option 3 on the Form), according to the Patent Policy, Patents held by it and whose licence would be required to practice or implement part(s) or all of a specific Recommendation | Deliverable.
+
+If a Patent Holder has selected the licensing option 3 on the Declaration Form, then, for the referenced relevant ITU Recommendation and ISO or IEC Deliverable, the ITU, ISO and IEC require the Patent Holder to provide certain additional information permitting patent identification.
+
+Multiple Declaration Forms are appropriate if the Patent Holder wishes to identify several Patents and classifies them in different options of the Declaration Form for the same Recommendation | Deliverable or if the Patent Holder classifies different claims of a complex patent in different options of the Declaration Form.
+
+Information contained in a Declaration Form may be corrected in case of obvious errors, such as a typographical mistake in a standard or patent reference number. The licensing declaration contained in the Declaration Form remains in force unless it is superseded by another Declaration Form containing more favourable licensing terms and conditions from a licensee's perspective reflecting (a) a change in commitment from option 3 to either option 1 or option 2, (b) a change in commitment from option 2 to option 1 or (c) un-checking one or more sub-options contained within option 1 or 2.
+
+==== Contact information
+
+In completing Declaration Forms, attention should be given to supplying contact information that will remain valid over time. Where possible, the "Name and Department" and e-mail address should be generic. Also it is preferable, where possible, that parties, particularly multinational organizations, indicate the same contact point on all Declaration Forms submitted.
+
+With a view to maintaining up-to-date information in the Patent Information database of each Organization, it is requested that the Organizations be informed of any change or corrections to the Declaration Form submitted in the past, especially with regard to the contact person.
+
+=== Conduct of meetings
+
+Early disclosure of Patents contributes to the efficiency of the process by which Recommendations | Deliverables are established. Therefore, each Technical Body, in the course of the development of a proposed Recommendation | Deliverable, will request the disclosure of any known Patents essential to the proposed Recommendation | Deliverable.
+
+Chairmen of Technical Bodies will, if appropriate, ask, at an appropriate time in each meeting, whether anyone has knowledge of patents, the use of which may be required to practice or implement the Recommendation | Deliverable being considered. The fact that the question was asked shall be recorded in the meeting report, along with any affirmative responses.
+
+As long as the Organization concerned has received no indication of a Patent Holder selecting paragraph 2.3 of the Patent Policy, the Recommendation | Deliverable may be approved using the appropriate and respective rules of the Organization concerned. It is expected that discussions in Technical Bodies will include consideration of including patented material in a Recommendation | Deliverable, however the Technical Bodies may not take position regarding the essentiality, scope, validity or specific licensing terms of any claimed Patents.
+
+=== Patent information database
+
+In order to facilitate both the standards-making process and the application of Recommendations | Deliverables, each Organization makes available to the public a Patent Information database composed of information that was communicated to the Organizations by the means of Declaration Forms. The Patent Information database may contain information on specific patents, or may contain no such information but rather a statement about compliance with the Patent Policy for a particular Recommendation | Deliverable.
+
+The Patent Information databases are not certified to be either accurate or complete, but only reflect the information that has been communicated to the Organizations. As such, the Patent Information databases may be viewed as simply raising a flag to alert users that they may wish to contact the entities who have communicated Declaration Forms to the Organizations in order to determine if patent licenses must be obtained for use or implementation of a particular Recommendation | Deliverable.
+
+=== Assignment or transfer of patent rights
+
+The rules governing the assignment or transfer of Patent rights are contained in the patent statement and licensing declaration forms (see Annexes 2 and 3). By complying with these rules, the Patent Holder has discharged in full all of its obligations and liability with regards to the licensing commitments after the transfer or assignment. These rules are not intended to place any duty on the Patent Holder to compel compliance with the licensing commitment by the assignee or transferee after the transfer occurs.

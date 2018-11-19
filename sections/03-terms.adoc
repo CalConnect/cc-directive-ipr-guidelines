@@ -1,0 +1,77 @@
+
+[source="CC10001,CC10002,CC10003"]
+[[terms]]
+== Terms and definitions
+
+[[term-contribution]]
+=== contribution
+
+content submitted to CalConnect intended to be part of a CalConnect
+standardization deliverable
+
+////
+Contribution:: Any document submitted for consideration by a Technical Body.
+////
+
+[[term-free-of-charge]]
+=== free of charge
+
+no monetary compensation will be sought from the patent holder (<<term-patent-holder>>) under licensing arrangements, if any
+
+NOTE: This term does not indicate that the patent holder is waiving all of its rights with respect to a patent, but only on the issue of monetary compensation.
+
+NOTE: This term means the patent holder will not seek any monetary compensation as part of the licensing arrangement (whether such compensation is called a royalty, a one-time licensing fee, etc.).
+
+NOTE: The patent holder is still entitled to require that the implementer of the relevant deliverable sign a license agreement that contains other reasonable terms and conditions such as those relating to governing law, field of use, warranties, etc.
+
+////
+Free of Charge:: The words "Free of Charge" do not mean that the Patent Holder is waiving all of its rights with respect to the Patent. Rather, "Free of Charge" refers to the issue of monetary compensation; i.e., that the Patent Holder will not seek any monetary compensation as part of the licensing arrangement (whether such compensation is called a royalty, a one-time licensing fee, etc.). However, while the Patent Holder in this situation is committing to not charging any monetary amount, the Patent Holder is still entitled to require that the implementer of the relevant Recommendation | Deliverable sign a license agreement that contains other reasonable terms and conditions such as those relating to governing law, field of use, warranties, etc.
+////
+
+
+[[term-patent]]
+=== patent
+
+claims contained in and identified by in patents, utility models and other similar statutory rights based on inventions (including applications for any of these) solely to the extent that any such claims are essential to the implementation of a CalConnect deliverable
+
+[[term-essential-patent]]
+=== essential patent
+
+patent (<<term-patent>>) required to implement a specific CalConnect deliverable.
+
+////
+Patent:: The word "Patent" means those claims contained in and identified by patents, utility models and other similar statutory rights based on inventions (including applications for any of these) solely to the extent that any such claims are essential to the implementation of a Recommendation | Deliverable. Essential patents are patents that would be required to implement a specific Recommendation | Deliverable.
+////
+
+[[term-patent-holder]]
+=== patent holder
+
+person or entity that owns, controls and/or has the ability to license patents (<<term-patent>>)
+
+////
+Patent Holder:: Person or entity that owns, controls and/or has the ability to license Patents.
+////
+
+
+[[term-reciprocity]]
+=== reciprocity
+
+patent holder (<<term-patent-holder>>) shall only be required to license any prospective licensee if such prospective licensee will commit to license its patent(s) for implementation of the same relevant CalConnect deliverable free of charge (<<term-free-of-charge>>) or under reasonable terms and conditions
+
+////
+Reciprocity:: The word "Reciprocity" means that the Patent Holder shall only be required to license any prospective licensee if such prospective licensee will commit to license its Patent(s) for implementation of the same relevant Recommendation | Deliverable Free of Charge or under reasonable terms and conditions.
+////
+
+
+////
+TODO: define licensee
+TODO: define reasonable terms and conditions
+////
+
+////
+Recommendations | Deliverables:: ITU-T and ITU-R Recommendations are referred to as "Recommendations", ISO deliverables and IEC deliverables are referred to as "Deliverables". The various types of Recommendation(s) | Deliverable(s) are referred to as "Document types" in the Patent Statement and Licensing Declaration Form (hereafter referred to as "Declaration Form") attached as Annex 2.
+////
+
+////
+Technical Bodies:: Study Groups, any subordinate groups and other groups of ITU-T and ITU-R and technical committees, subcommittees and working groups in ISO and IEC.
+////
