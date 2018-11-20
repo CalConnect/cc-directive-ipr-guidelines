@@ -1,0 +1,1429 @@
+<?xml version="1.0"?>
+<!DOCTYPE html SYSTEM "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:epub="http://www.idpf.org/2007/ops">
+  <head><style>
+  <!--
+/*
+    0 CSS RESET
+*/
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0; }
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  border: 0;
+  font-size: 100%; }
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, tt, var,
+b, u, i, center,
+dl, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  vertical-align: baseline; }
+
+html, body, div, span, applet, object, iframe,
+p, blockquote,
+a, abbr, acronym, address, big, cite,
+del, dfn, em, img, ins, q, s,
+small, strike, strong, sub, sup, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  font-family: "Overpass", sans-serif; }
+
+code, pre, tt, kbd, samp {
+  font-family: "Space Mono", monospace; }
+
+h1, h2, h3, h4, h5, h6, .h2Annex {
+  font-family: "Overpass", sans-serif; }
+
+dl {
+  display: grid;
+  grid-template-columns: max-content auto; }
+
+dt {
+  grid-column-start: 1; }
+
+dd {
+  grid-column-start: 2; }
+
+dd p, dt p {
+  margin-top: 0px; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/*
+    1. HTML & Body
+*/
+body {
+  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  color: #1d1d1d;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 1.4em;
+  background-color: #ffffff; }
+
+main {
+  margin: 0 3em 0 6em; }
+
+#toc {
+  font-family: "Overpass", sans-serif;
+  font-weight: 400; }
+
+/*
+    2. Responsive navigation layout
+*/
+@media screen and (min-width: 768px) {
+  nav {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 323px;
+    font-size: 0.9em;
+    overflow: auto;
+    padding: 0 0 0 45px;
+    margin-right: 30px;
+    background-color: #f7f7f7; }
+  #toggle {
+    position: fixed;
+    height: 100%;
+    width: 30px;
+    background-color: #1d1d1d;
+    color: white !important;
+    cursor: pointer;
+    z-index: 100; }
+  #toggle span {
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%); }
+  .container {
+    padding-left: 360px; }
+  .rule.toc {
+    display: none; }
+  h1.toc-contents {
+    margin-top: 1em; }
+  ul#toc-list {
+    padding: 0;
+    margin: 0; } }
+
+@media screen and (max-width: 768px) {
+  #toc {
+    padding: 0 1.5em 0 1.5em;
+    overflow: visible; } }
+
+@media screen {
+  img {
+    width: 100%;
+    height: auto; } }
+
+#toc ul {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+#toc li {
+  padding: 5px 10px; }
+
+#toc a {
+  color: #485094;
+  text-decoration: none;
+  display: block; }
+
+#toc a:hover {
+  color: white; }
+
+#toc .h2 {
+  padding-left: 30px; }
+
+#toc .h3 {
+  padding-left: 50px; }
+
+#toc .toc-active a {
+  color: white; }
+
+#toc .toc-active, #toc li:hover {
+  background: #1d1d1d;
+  box-shadow: inset -5px 0px 10px -5px #1d1d1d !important; }
+
+#toc li:hover a {
+  color: white; }
+
+/*
+    Document types + stages
+*/
+.document-type-band {
+  left: 0;
+  top: 180px;
+  height: 100%;
+  position: fixed;
+  display: block;
+  z-index: 99;
+  /*box-shadow: -5px 0px 10px #1d1d1d*/ }
+
+.document-stage-band {
+  left: 0;
+  top: 0;
+  height: 100%;
+  position: fixed;
+  display: block;
+  z-index: 98;
+  box-shadow: -5px 0px 10px #1d1d1d; }
+
+.document-type {
+  position: relative;
+  width: 25px; }
+
+.document-stage {
+  position: relative;
+  width: 25px; }
+
+p.document-type, p.document-stage {
+  color: white;
+  text-transform: uppercase;
+  font-size: 0.9em;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  margin: 0;
+  margin-left: 6px;
+  writing-mode: tb-rl;
+  transform: rotate(180deg);
+  white-space: nowrap;
+  display: block;
+  bottom: 0; }
+
+p.document-type {
+  font-weight: 400;
+  height: 210px; }
+
+#governance-band p.document-type {
+  font-weight: 400;
+  height: 230px !important; }
+
+p.document-stage {
+  font-weight: 300;
+  height: 160px; }
+
+#standard-band {
+  background-color: #0AC442; }
+
+#standard {
+  border-bottom: solid 3px #0AC442; }
+
+#directive-band {
+  background-color: #540D6E; }
+
+#directive {
+  border-bottom: solid 3px #540D6E; }
+
+#guide-band {
+  background-color: #D183C9; }
+
+#guide {
+  border-bottom: solid 3px #D183C9; }
+
+#specification-band {
+  background-color: #65AFFF; }
+
+#specification {
+  border-bottom: solid 3px #65AFFF; }
+
+#report-band {
+  background-color: #3A405A; }
+
+#report {
+  border-bottom: solid 3px #3A405A; }
+
+#amendment-band {
+  background-color: #F26430; }
+
+#amendment {
+  border-bottom: solid 3px #F26430; }
+
+#corrigendum-band {
+  background-color: #C84630; }
+
+#corrigendum {
+  border-bottom: solid 3px #C84630; }
+
+#administrative-band {
+  background-color: #BFAE48; }
+
+#administrative {
+  border-bottom: solid 3px #BFAE48; }
+
+#advisory-band {
+  background-color: #BD9391; }
+
+#advisory {
+  border-bottom: solid 3px #BD9391; }
+
+#proposal-band {
+  background-color: #39A0ED; }
+
+#proposal {
+  border-bottom: solid 3px #39A0ED; }
+
+#working-draft-band {
+  background-color: #2D7393; }
+
+#working-draft {
+  border-bottom: solid 3px #2D7393; }
+
+#committee-draft-band {
+  background-color: #2A6B7C; }
+
+#committee-draft {
+  border-bottom: solid 3px #2A6B7C; }
+
+#draft-standard-band {
+  background-color: #1C7F7A; }
+
+#draft-standard {
+  border-bottom: solid 3px #1C7F7A; }
+
+#final-draft-band {
+  background-color: #53C170; }
+
+#final-draft {
+  border-bottom: solid 3px #53C170; }
+
+#published-band {
+  background-color: #069E2D; }
+
+#published {
+  border-bottom: solid 3px #069E2D; }
+
+#withdrawn-band {
+  background-color: #004E64; }
+
+#withdrawn {
+  border-bottom: solid 3px #004E64; }
+
+#cancelled-band {
+  background-color: #2E382E; }
+
+#cancelled {
+  border-bottom: solid 3px #2E382E; }
+
+.coverpage-maturity {
+  font-family: "Overpass", sans-serif;
+  font-weight: 400;
+  font-size: 1em;
+  margin: 0 0 2em 0;
+  text-transform: uppercase; }
+
+/*
+    3. TYPOGRAPHY
+*/
+/*
+    3.1 Titles
+*/
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Overpass", sans-serif;
+  color: #0e1a85;
+  font-weight: 600;
+  margin-top: 2em;
+  margin-bottom: 0.3em; }
+
+h1 {
+  font-size: 1.4em;
+  text-transform: uppercase;
+  margin-top: 2em; }
+
+h1#content {
+  margin-top: 2em; }
+
+h2 {
+  font-size: 1.3em;
+  font-weight: 400; }
+
+h3 {
+  font-size: 1.1em;
+  font-weight: 400; }
+
+/*
+  span[id^="toc"]:after {
+    float: left;
+    padding-right: 4px;
+    margin-left: -20px;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 0.8em;
+    color: #cfcfcf;
+    content: "\f0c1";
+  }
+  */
+.TermNum, .Terms, .AltTerms {
+  color: #485094;
+  font-weight: 400; }
+
+p.TermNum {
+  font-size: 0.9em;
+  line-height: 1em;
+  margin: 0;
+  margin-top: 2em; }
+
+p.Terms {
+  font-size: 1.1em;
+  line-height: 1.7em;
+  margin: 0; }
+
+/*
+  p.AltTerms {
+    font-style: italic;
+    margin: 0;
+  }
+  */
+span.obligation {
+  font-weight: 400; }
+
+/*
+    3.2 Links
+*/
+a, a:visited {
+  text-decoration: none;
+  color: #485094; }
+
+a:hover {
+  color: white;
+  background: #1d1d1d;
+  box-shadow: 3px 0 0 #1d1d1d, -3px 0 0 #1d1d1d;
+  /* padding: 2px 0 2px 0; */ }
+
+::selection {
+  background: #1d1d1d;
+  /* WebKit/Blink Browsers */
+  color: white; }
+
+::-moz-selection {
+  background: #1d1d1d;
+  /* Gecko Browsers */
+  color: white; }
+
+.contact-info a:hover {
+  color: #485094;
+  text-decoration: underline;
+  background: none;
+  box-shadow: 0 0 0 0; }
+
+/*
+    3.3 Lists
+*/
+ul {
+  margin-left: 1.2em; }
+
+ol {
+  margin-left: 1.2em; }
+
+ul > li {
+  list-style: none; }
+
+ul > li:before {
+  content: "\2014";
+  display: inline-block;
+  width: 1em;
+  margin-left: -1.2em; }
+
+li p:first-child {
+  display: inline; }
+
+li:first-child {
+  margin-top: 1em; }
+
+#toc ul {
+  margin-bottom: 0.25em; }
+
+#toc li {
+  list-style-type: none; }
+
+#toc li:before {
+  content: " ";
+  display: none; }
+
+/*
+    3.4 Rules
+*/
+.rule {
+  width: 100%;
+  height: 1px;
+  background-color: #0e1a85;
+  margin: 2em 0; }
+
+h2 p {
+  display: inline; }
+
+/*
+    3.5 Bibliograhy
+*/
+p.Biblio, p.NormRef {
+  margin-top: 1em;
+  margin-left: 2em;
+  text-indent: -2em; }
+
+/*
+    3.6 Source Code + figures
+*/
+.figure, .Sourcecode {
+  font-family: "Space Mono", monospace;
+  background-color: #f7f7f7;
+  font-size: 0.8em;
+  line-height: 1.6em;
+  padding: 1.5em;
+  margin: 2em 0 1em 0;
+  overflow: auto; }
+
+.FigureTitle {
+  font-weight: 700;
+  font-size: 1em;
+  text-align: center; }
+
+/*
+    3.7 Notes
+*/
+.Note {
+  background-color: #fff495;
+  color: #47430c;
+  padding: 1.2em;
+  margin: 2em 0 1em 0; }
+
+/*
+    3.8 Examples
+*/
+table.example {
+  background-color: #e1eef1; }
+
+td.example {
+  padding: 0 1em 0 1em;
+  margin: 2em 0 1em 0; }
+
+.example .example-title {
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 0; }
+
+/*
+    3.9 Tables
+*/
+table {
+  border-collapse: collapse;
+  width: 100%;
+  font-weight: 300;
+  margin: 1em 0 2em 0;
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 2em; }
+
+table, th, td {
+  border: 1px solid black;
+  font-size: 0.95em; }
+
+td, th {
+  padding: 1em; }
+
+td.header {
+  font-weight: 400; }
+
+p.TableTitle {
+  text-align: center;
+  margin-top: 2.5em;
+  font-weight: 400; }
+
+/*
+  3.10 Footnotes
+*/
+a.footnote-number {
+  vertical-align: super;
+  font-size: 0.8em; }
+
+.footnote {
+  font-size: 0.9em; }
+
+/*
+    3.11 Blockquotes
+*/
+.Quote {
+  background-color: #f7f7f7;
+  font-style: italic;
+  width: 80%;
+  padding: 1.5em;
+  margin-top: 2em;
+  margin-left: auto;
+  margin-right: auto; }
+
+.QuoteAttribution {
+  text-align: right; }
+
+/*
+    3.12 Formulas
+*/
+.formula, .Formula {
+  background-color: #f7f7f7;
+  padding: 1.5em;
+  margin-top: 2em;
+  text-align: center; }
+
+/*
+    3.13 Contact Info
+*/
+.contact-info {
+  background-color: #f7f7f7;
+  padding: 2em;
+  margin-top: 5em;
+  width: auto;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left; }
+
+.contact-info p, .contact-info a {
+  font-family: "Space Mono", monospace;
+  font-weight: 400; }
+
+.contact-info .name {
+  font-weight: 700;
+  font-size: 1.2em;
+  margin-bottom: 0; }
+
+.contact-info .address {
+  font-size: 1em;
+  line-height: 1.3em;
+  margin-top: 0; }
+
+/*
+    Keywords
+*/
+span.keyword {
+  font-weight: 600; }
+
+/*
+    Paragraphs
+*/
+p {
+  margin-top: 1em;
+  margin-bottom: 1em; }
+
+/* Admonitions */
+.Admonition, .admonition {
+  background-color: #ffb3b3;
+  /* color: #47430c;*/
+  padding: 0.5em;
+  margin: 1.5em 0 1.5em 0;
+  text-align: left; }
+
+.Admonition p, .admonition p {
+  margin: 0; }
+
+/*
+    4.0 Page header
+*/
+/*
+    4.1 Top Logo
+*/
+.wrapper-top {
+  background-color: #0e1a85;
+  /* background-image: url("img/dots@2x.png"); */
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQAAAAEACAYAAABccqhmAAAACXBIWXMAABYlAAAWJQFJUiTwAAADwUlEQVR4nO3YgQ2AMAwDwcAiWZ1NizrH30lIeIEq9nPOGSDqPgC7+93v/suy3Mmvhx+6VAAIcwFAmc4nyzYAIMgGAGEuACirdyBZtgEASTYACHMBQFm9A8myDQBIsgFAmAsAyuodSJZtAECSDQDCXABQVu9AsmwDAJJsABDmAoCyegeSZRsAkGQDgDAXAJTVO5As2wCAJBsAhLkAoKzegWTZBgAk2QAgzAUAZfUOJMs2ACDJBgBhLgAoq3cgWbYBAEk2AAhzAUBZvQPJsg0ASLIBQJgLAMrqHUiWbQBAkg0AwlwAUFbvQLJsAwCSbAAQ5gKAsnoHkmUbAJBkA4AwFwCU1TuQLNsAgCQbAIS5AKCs3oFk2QYAJNkAIMwFAGX1DiTLNgAgyQYAYS4AKKt3IFm2AQBJNgAIcwFAWb0DybINAEiyAUCYCwDK6h1Ilm0AQJINAMJcAFBW70CybAMAkmwAEOYCgLJ6B5JlGwCQZAOAMBcAlNU7kCzbAIAkGwCEuQCgrN6BZNkGACTZACDMBQBl9Q4kyzYAIMkGAGEuACirdyBZtgEASTYACHMBQFm9A8myDQBIsgFAmAsAyuodSJZtAECSDQDCXABQVu9AsmwDAJJsABDmAoCyegeSZRsAkGQDgDAXAJTVO5As2wCAJBsAhLkAoKzegWTZBgAk2QAgzAUAZfUOJMs2ACDJBgBhLgAoq3cgWbYBAEk2AAhzAUBZvQPJsg0ASLIBQJgLAMrqHUiWbQBAkg0AwlwAUFbvQLJsAwCSbAAQ5gKAsnoHkmUbAJBkA4AwFwCU1TuQLNsAgCQbAIS5AKCs3oFk2QYAJNkAIMwFAGX1DiTLNgAgyQYAYS4AKKt3IFm2AQBJNgAIcwFAWb0DybINAEiyAUCYCwDK6h1Ilm0AQJINAMJcAFBW70CybAMAkmwAEOYCgLJ6B5JlGwCQZAOAMBcAlNU7kCzbAIAkGwCEuQCgrN6BZNkGACTZACDMBQBl9Q4kyzYAIMkGAGEuACirdyBZtgEASTYACHMBQFm9A8myDQBIsgFAmAsAyuodSJZtAECSDQDCXABQVu9AsmwDAJJsABDmAoCyegeSZRsAkGQDgDAXAJTVO5As2wCAJBsAhLkAoKzegWTZBgAk2QAgzAUAZfUOJMs2ACDJBgBhLgAoq3cgWbYBAEk2AAhzAUBZvQPJsg0ASLIBQJgLAMrqHUiWbQBAkg0AwlwAUFbvQLJsAwCSbAAQ5gKAsnoHkmUbAJBkA4AwFwCU1TuQLNsAgCQbAFTNzA9ggAr9aahO8QAAAABJRU5ErkJggg==");
+  color: #ffffff;
+  padding: 2em 0; }
+
+.doc-number {
+  font-size: 0.5em;
+  font-family: "Overpass", sans-serif; }
+
+.coverpage-title {
+  padding-bottom: 0.5em;
+  font-family: "Overpass", sans-serif;
+  font-size: 1.2em;
+  line-height: 1.2em;
+  font-weight: 900;
+  padding-left: 1em;
+  padding-right: 1em; }
+
+.title-section1 {
+  padding: 0 2em 0 3em; }
+
+.prefatory-section {
+  padding: 0 3em 0 6em; }
+
+.zzSTDTitle1, .MsoCommentText {
+  display: none; }
+
+.coverpage {
+  text-align: center;
+  padding-left: 1.5em; }
+
+.coverpage-logo span, .coverpage-tc-name span {
+  font-family: "Overpass", sans-serif;
+  text-transform: uppercase;
+  font-weight: 600; }
+
+.coverpage-tc-name {
+  font-size: 1.2em;
+  line-height: 1.2em;
+  margin: 0.25em 0; }
+
+/*
+    4.2 Document Identity
+*/
+.coverpage-doc-identity {
+  font-size: 2em;
+  line-height: 2em; }
+
+.coverpage-title .title-second {
+  display: none; }
+
+.coverpage-stage-block {
+  font-family: "Overpass", sans-serif;
+  font-weight: 700;
+  font-size: 1.25em;
+  margin: 2em 0em 2em 0em;
+  text-transform: uppercase; }
+
+/*
+    4.3 Draft Warning
+*/
+.coverpage-warning {
+  border-top: solid 1px #f36f36;
+  border-bottom: solid 1px #f36f36;
+  margin: 1em 2em;
+  color: #485094;
+  padding: 1em; }
+
+.coverpage-warning .title {
+  color: #f36f36;
+  font-family: "Overpass", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 1.2em; }
+
+/*
+    4.4 Copyright
+*/
+.copyright {
+  padding: 1em;
+  font-size: 0.8em;
+  text-align: left; }
+
+.copyright .name, .copyright .address {
+  color: #485094; }
+
+/*
+    5.0 Other styles
+*/
+/*
+To top button
+*/
+#myBtn {
+  font-family: "Space Mono", monospace;
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 12px;
+  border: none;
+  outline: none;
+  background-color: #1d1d1d;
+  opacity: 0.15;
+  color: white;
+  cursor: pointer;
+  padding: 10px 15px 10px 15px;
+  border-radius: 4px; }
+
+#myBtn:hover {
+  opacity: 1; }
+
+a.anchorjs-link:hover {
+  background: none;
+  color: #485094;
+  box-shadow: none; }
+
+@page {
+  margin: 2cm 1cm 2cm 1cm; }
+
+@media print {
+  h1, .title-section1 {
+    page-break-before: always; }
+  #toggle, .document-stage-band,
+  .document-type-band, #myBtn {
+    display: none; }
+  .container {
+    padding-left: 0; }
+  nav {
+    position: relative;
+    width: auto;
+    font-size: 0.9em;
+    overflow: auto;
+    padding: 0;
+    margin-right: 0;
+    background-color: white; }
+  #toc .toc-active a {
+    color: #485094; }
+  #toc .toc-active, #toc li:hover {
+    background: white;
+    box-shadow: none !important; }
+  #toc li:hover a {
+    color: black; }
+  h1.toc-contents {
+    margin-top: 2em; } }
+
+-->
+</style><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />        <title>Guidelines for the implementation of the CalConnect patent policy</title>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!--TOC script import-->
+    <script type="text/javascript" src="https://cdn.rawgit.com/jgallen23/toc/0.3.2/dist/toc.min.js"></script>
+
+    <!--Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i|Space+Mono:400,700" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Overpass:300,300i,600,900" rel="stylesheet" />
+    <!--Font awesome import for the link icon-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css" integrity="sha384-v2Tw72dyUXeU3y4aM2Y0tBJQkGfplr39mxZqlTBDUZAb9BGoC40+rdFCG0m10lXk" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/fontawesome.css" integrity="sha384-q3jl8XQu1OpdLgGFvNRnPdj5VIlCvgsDQTQB6owSOHWlAurxul7f+JpUOVdAiJ5P" crossorigin="anonymous" />
+<style class="anchorjs"></style>
+</head>
+  <body lang="EN-US" link="blue" vlink="#954F72" xml:lang="EN-US" class="container">
+    <div class="title-section"><div class="document-stage-band" id="working-draft-band">
+    <p class="document-stage">Working Draft</p>
+</div>
+
+<div class="document-type-band" id="directive-band">
+    <p class="document-type">CalConnect Directive</p>
+</div>
+
+
+
+  <div id="toggle"> <span>&#x2022;</span> </div>
+
+  <header>
+
+<!--<div class="WordSection1">-->
+  <div class="coverpage">
+    <div class="wrapper-top">
+
+  <div class="coverpage-doc-identity">
+    <div class="doc-number">
+      <span class="docnumber">CC/DIR/WD 10005:2018</span>
+      <!-- <span class="docnumber-separator">:</span>
+      <span class="docyear">2018</span> -->
+    </div>
+
+    <div class="coverpage-title">
+      <span class="title-first">Guidelines for the implementation of the CalConnect patent policy</span>
+      <!--<span class="title-second"></span>-->
+    </div>
+  </div>
+
+  <div class="coverpage-logo">
+    <span>The Calendaring and Scheduling Consortium</span>
+  </div>
+
+  <div class="coverpage-tc-name">
+    <span>TC PUBLISH</span>
+  </div>
+  </div>
+
+  <div class="title-section1">
+  <div class="coverpage-stage-block">
+    <span class="coverpage-stage" id="directive">CalConnect Directive</span>
+  </div>
+
+  <div class="coverpage-stage-block">
+    <span class="coverpage-maturity" id="working-draft">Working Draft</span>
+</div>
+
+
+  <div class="coverpage-warning">
+    <span class="title">Warning for Drafts</span>
+
+    <p class="content">
+    This document is not a CalConnect Standard. It is distributed for review and
+    comment, and is subject to change without notice and may not be referred to as
+    a Standard. Recipients of this draft are invited to submit, with their
+    comments, notification of any relevant patent rights of which they are aware
+    and to provide supporting documentation.
+    </p>
+  </div>
+
+
+<div class="copyright">
+  <p class="year">
+    &#xA9; 2018 The Calendaring and Scheduling Consortium, Inc.
+  </p>
+
+  <p class="message">
+    All rights reserved. Unless otherwise specified, no part of this
+    publication may be reproduced or utilized otherwise in any form or by any
+    means, electronic or mechanical, including photocopying, or posting on the
+    internet or an intranet, without prior written permission. Permission can
+    be requested from the address below.
+  </p>
+
+<div class="contact-info">
+  <p class="name">The Calendaring and Scheduling Consortium, Inc.</p>
+  <p class="address">
+    4390 Chaffin Lane<br />
+    McKinleyville<br />
+    California 95519<br />
+    United States of America<br />
+    <br />
+    <a href="mailto:copyright@calconnect.org">copyright@calconnect.org</a><br />
+    <a href="www.calconnect.org">www.calconnect.org</a>
+  </p>
+</div>
+</div>
+
+<div class="rule"></div>
+</div>
+
+
+
+</div></header>
+      <p>&#xA0;</p>
+    </div>
+    <br />
+    <div class="prefatory-section"><nav>
+  <h1 id="content">Contents</h1>
+  <div id="toc"></div>
+
+</nav>
+
+
+<div class="rule toc"></div>
+
+      <p>&#xA0;</p>
+    </div>
+    <br />
+    <main class="main-section"><button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+      <br />
+      <div>
+        <h1 class="ForewordTitle">Foreword</h1>
+        <p id="_f81d2814-886e-4e0f-bec9-bc37bdae8ee1">The Calendaring and Scheduling Consortium ("CalConnect") is global
+non-profit organization with the aim to facilitate interoperability of
+collaborative technologies and tools through open standards.</p>
+        <p id="_50f553d3-cb95-4ac1-b818-55c52cc098fc">CalConnect works closely with international and regional partners,
+of which the full list is available on our website
+(<a href="https://www.calconnect.org/about/liaisons-and-relationships">https://www.calconnect.org/about/liaisons-and-relationships</a>).</p>
+        <p id="_3f9488b9-c74b-42cc-afe9-4a78fcee7a8f">The procedures used to develop this document and those intended for its
+further maintenance are described in the CalConnect Directives.</p>
+        <p id="_3670a5a1-fb03-435f-9648-28ed7cfc5bb6">In particular the different approval criteria needed for the different
+types of CalConnect documents should be noted. This document was drafted in
+accordance with the editorial rules of the CalConnect Directives.</p>
+        <p id="_446bf1ad-7118-49fb-99fe-223f5ba26ef0">Attention is drawn to the possibility that some of the elements of this
+document may be the subject of patent rights. CalConnect shall not be
+held responsible for identifying any or all such patent rights. Details
+of any patent rights identified during the development of the document
+will be provided in the Introduction.</p>
+        <p id="_e029e5bd-b169-49b8-826e-9cc1ec24c4c5">Any trade name used in this document is information given for the
+convenience of users and does not constitute an endorsement.</p>
+        <p id="_84046d36-aca3-4fef-9570-455dd568e880">This document was prepared by Technical Committee
+<i>PUBLISH</i>.</p>
+        <p id="_58e65a6e-9df6-41d5-b603-4f184cf32329">This document provides guidance on the implementation of the
+CalConnect patent policy (<a href="#CC10003">CC/DIR 10003</a>) as applicable
+to internal process and procedures, especially in relation to
+the standardization and publication processes described in
+<a href="#CC10001">CC/DIR 10001</a>.</p>
+      </div>
+      <br />
+      <div class="Section3" id="_introduction">
+        <h1 class="IntroTitle">Introduction</h1>
+        <div id="_general"><h2>General</h2><p id="_2668ee01-5de5-4c9a-b77c-c998e2366b27">CalConnect is committed in expanding the realm of standards
+in collaborative technologies with a focus on interoperability
+across the globe and communities of practice.</p>
+<p id="_9011db45-0c03-46ab-88fe-788d41bda6d0">As a proponent of open standards, has adopted a patent policy
+in <a href="#CC10003">CC/DIR 10003</a> to align IPR practice with major international
+standardization bodies including ISO, IEC and ITU.</p></div>
+        <div id="_purpose"><h2>Purpose</h2><p id="_61dbc6be-fd24-438b-8119-1ae73b343b85">This document describes guidelines for the implementation of the
+CalConnect patent policy specified in <a href="#CC10003">CC/DIR 10003</a>
+in the standardization and publication processes described
+in <a href="#CC10001">CC/DIR 10001</a>.</p>
+<p id="_2e3c708d-acbd-465f-9766-9b7603783233">The intent of this document is to:</p>
+<ul id="_0885f5ee-b2f5-4ffe-9c33-259ffa82bab2">
+  <li>
+    <p id="_f76bc34e-ac6d-40a5-b98f-484d77c372c2">encourage the early disclosure and identification of patents during the
+standardization and publication processes;</p>
+  </li>
+  <li>
+    <p id="_1175e010-2222-4422-ab47-c8670a6e4bd7">resolve potential patent concerns and rights problems relevant to
+the standardization and publication processes.</p>
+  </li>
+</ul></div>
+      </div>
+      <p class="zzSTDTitle1">Guidelines for the implementation of the CalConnect patent policy</p>
+      <div id="_scope">
+        <h1>1.&#xA0; Scope</h1>
+        <p id="_a3859431-26ee-4fa6-b1e4-636a162e48a2">This document provides guidelines on the application of
+the CalConnect patent policy (<a href="#CC10003">CC/DIR 10003</a>) towards the following
+areas of CalConnect:</p>
+        <ul id="_d528646c-e7cd-4163-be32-296e47a22955">
+  <li>
+    <p id="_f415021b-e4d7-4360-9234-ee7272ce0e0b">standardization and publication process (described in <a href="#CC10001">CC/DIR 10001</a>);</p>
+  </li>
+  <li>
+    <p id="_a3dca003-dbc1-420f-a7f1-e6195d13996e">document requirements (described in <a href="#CC100002">CC100002</a>).</p>
+  </li>
+</ul>
+        <p id="_5f5b6be9-d328-44bf-9619-9fc84c01adb7">This document does not cover the implementation of requirements
+in CalConnect standards which involve intellectual property rights
+(such as patents).</p>
+      </div>
+      <div>
+        <h1>2.&#xA0; Normative references</h1>
+        <p>The following documents are referred to in the text in such a way that some or all of their content constitutes requirements of this document. For dated references, only the edition cited applies. For undated references, the latest edition of the referenced document (including any amendments) applies.</p>
+        <p id="CC10001" class="NormRef">CC/DIR 10001,
+    <i>CalConnect Directive: Standardization and publication</i>
+  </p>
+        <p id="CC10002" class="NormRef">CC/DIR 10002,
+    <i>CalConnect Directive: Standard document requirements</i>
+  </p>
+        <p id="CC10003" class="NormRef">CC/DIR 10003,
+    <i>CalConnect Directive: Patent policy</i>
+  </p>
+      </div>
+      <div id="terms"><h1>3.&#xA0; Terms and definitions</h1><p>For the purposes of this document, the terms and definitions
+  given in <a href="#CC10001">CC/DIR 10001</a>, <a href="#CC10002">CC/DIR 10002</a> and <a href="#CC10003">CC/DIR 10003</a> and the following apply.</p>
+<h2 class="TermNum" id="term-contribution">3.1&#xA0;<p class="Terms" style="text-align:left;">contribution</p></h2>
+  
+  <p id="_ad47e823-9627-4c32-a661-e4b05bab2e4b">content submitted to CalConnect intended to be part of a CalConnect
+standardization deliverable</p>
+<h2 class="TermNum" id="term-free-of-charge">3.2&#xA0;<p class="Terms" style="text-align:left;">free of charge</p></h2><p id="_426eb88a-241d-44d8-a01f-c6bacab478c6">no monetary compensation will be sought from the patent holder (<a href="#term-patent-holder">Clause 3.5</a>) under licensing arrangements, if any</p>
+
+
+<div class="Note"><p>Note 1 to entry: This term does not indicate that the patent holder is waiving all of its rights with respect to a patent, but only on the issue of monetary compensation.</p></div><div class="Note"><p>Note 2 to entry: This term means the patent holder will not seek any monetary compensation as part of the licensing arrangement (whether such compensation is called a royalty, a one-time licensing fee, etc.).</p></div><div class="Note"><p>Note 3 to entry: The patent holder is still entitled to require that the implementer of the relevant deliverable sign a license agreement that contains other reasonable terms and conditions such as those relating to governing law, field of use, warranties, etc.</p></div><h2 class="TermNum" id="term-patent">3.3&#xA0;<p class="Terms" style="text-align:left;">patent</p></h2>
+  
+  <p id="_e4bdbfe0-3a91-426d-8302-bdc32b04c7b2">claims contained in and identified by in patents, utility models and other similar statutory rights based on inventions (including applications for any of these) solely to the extent that any such claims are essential to the implementation of a CalConnect deliverable</p>
+<h2 class="TermNum" id="term-essential-patent">3.4&#xA0;<p class="Terms" style="text-align:left;">essential patent</p></h2>
+  
+  <p id="_2a7525b5-6088-4774-a870-144fc9710209">patent (<a href="#term-patent">Clause 3.3</a>) required to implement a specific CalConnect deliverable.</p>
+<h2 class="TermNum" id="term-patent-holder">3.5&#xA0;<p class="Terms" style="text-align:left;">patent holder</p></h2>
+  
+  <p id="_51a79682-427b-4d4a-8e79-bad20e6c3de8">person or entity that owns, controls and/or has the ability to license patents (<a href="#term-patent">Clause 3.3</a>)</p>
+<h2 class="TermNum" id="term-reciprocity">3.6&#xA0;<p class="Terms" style="text-align:left;">reciprocity</p></h2>
+  
+  <p id="_295bfa47-d1da-483e-8ae7-b2eda57f9499">patent holder (<a href="#term-patent-holder">Clause 3.5</a>) shall only be required to license any prospective licensee if such prospective licensee will commit to license its patent(s) for implementation of the same relevant CalConnect deliverable free of charge (<a href="#term-free-of-charge">Clause 3.2</a>) or under reasonable terms and conditions</p>
+<h2 class="TermNum" id="term-declaration">3.7&#xA0;<p class="Terms" style="text-align:left;">patent declaration</p></h2>
+  
+  <p id="_87ba6564-09ff-4328-a982-2273d17ad183">notice or acknowledgement that a patent may cover the use of
+a deliverable</p>
+<h2 class="TermNum" id="term-patent-information-database">3.8&#xA0;<p class="Terms" style="text-align:left;">patent information database</p></h2>
+  
+  <p id="_a6fd5c91-b953-46fb-94f0-1573f53c332c">database containing patent information relating to
+standardization deliverables</p>
+<h2 class="TermNum" id="term-technical-body">3.9&#xA0;<p class="Terms" style="text-align:left;">technical body</p></h2>
+  
+  <p id="_be2efaf4-c2ed-4d62-9240-555930021288">technical committees and any other groups that manage
+development of CalConnect standardization deliverables</p>
+</div>
+      <div id="patent-disclosure">
+        <h1>4.&#xA0; Patent disclosure</h1>
+        <div id="_general_2"><h2>4.1. General</h2><p id="_a3c3adb2-5f65-42d3-b35f-13d0cc95591a">This clause describes the principles of patent disclosure
+of patents that may affect standardization deliverables produced
+by CalConnect.</p>
+<p id="_6625361b-6075-41ca-8e2c-d3035df11e3e">This clause applies to any patent disclosed or drawn
+to the attention of CalConnect during the development
+of and subsequent to the approval of deliverables.</p></div>
+        <div id="_requirements"><h2>4.2. Requirements</h2><div id="_participation_obligation"><h3>4.2.1. Participation obligation</h3><p id="_9332bf44-ab51-49d1-a641-63263ba77af7">All parties participating in the standardization activities of CalConnect
+are obligated to inform CalConnect of
+any known patent or to any known pending patent application,
+as mandated by <a href="#CC10003">CC/DIR 10003, Clause 1</a></p>
+<p id="_ddd2362d-68c5-47ed-a2b9-f95de0d31740">Where such parties include recipients of a draft deliverable at any stage,
+and the patent or patent application could be of the party&#x2019;s own or
+that of other entities.</p></div>
+<div id="_early_disclosure"><h3>4.2.2. Early disclosure</h3><p id="_6036c521-b2da-4529-8f5b-5bc70ff9fc46">Patent information should be disclosed as early as possible during the development of the deliverable.</p>
+<p id="_d5a9f77f-3738-4e64-9cf7-4ae8d0f31f91">Such patent information should be provided in good faith and on a best effort basis.</p>
+<div id="_5d3476b3-b6bc-4a7c-b289-71fafcf339cb" class="Note"><p><span class="note_label">NOTE  1</span>&#xA0; This might not be possible when the first draft text appears since at this time, the text might be still too vague or subject to subsequent major modifications.</p></div>
+<div id="_5767522a-4f3e-416f-924e-99ea2c06768e" class="Note"><p><span class="note_label">NOTE  2</span>&#xA0; There is no requirement for patent searches.</p></div></div>
+<div id="_external_originating_disclosure"><h3>4.2.3. External-originating disclosure</h3>
+
+  <p id="_f7d881fd-7e60-4af1-8c66-e823bf63a5d3">Parties not participating in the standardization activities of CalConnect may also inform CalConnect to any known patent, either their own and/or of any third-party, that may cover a CalConnect deliverable.</p>
+</div></div>
+        <div id="_method_of_disclosure"><h2>4.3. Method of disclosure</h2><div id="_declaration_form"><h3>4.3.1. Declaration form</h3>
+
+  <p id="_f2499602-5106-4aa9-883e-ef55ca348f84">When disclosing their own patents, patent holders shall fill in the "Patent Statement and Licensing Declaration Form" (referred to as the "declaration form") as stated in <a href="#patent-form">Appendix A</a>.</p>
+</div>
+<div id="_third_party_patent_disclosure"><h3>4.3.2. Third-party patent disclosure</h3><p id="_cd8a286b-f126-4756-8935-4a74a15f3370">Any communication drawing the attention to any third-party patent
+should be addressed to CalConnect in writing.</p>
+<p id="_49509195-6c1e-4774-8907-361df678f4a0">The Executive Director of CalConnect will then request the potential
+patent holder to submit a declaration form, if applicable.</p></div></div>
+        <div id="_resolution_to_discriminatory_licensing"><h2>4.4. Resolution to discriminatory licensing</h2><p id="_9d4defff-2e1d-46dc-a2e3-85fb0a807b13">If a patent holder is unwilling to license under <a href="#CC10003">CC/DIR 10003, Clause 2.1</a> or <a href="#CC10003">CC/DIR 10003, Clause 2.2</a>, CalConnect will promptly advise the project owner(s) responsible for the affected deliverable so that appropriate action can be taken.</p>
+<p id="_4650f1f1-47d6-4c8a-af58-7c36c6aa7425">Such action shall include, but may not be limited to:</p>
+<ul id="_a3f35f6e-cf4b-4507-8477-7624b686920d">
+  <li>
+    <p id="_1a35c339-fa9f-47d6-af15-2b7705d304ca">a review of the deliverable or its draft in order to remove the potential conflict; or</p>
+  </li>
+  <li>
+    <p id="_1e0f621e-98f3-45e6-8873-40ebb831f504">to further examine and clarify the technical considerations causing the conflict.</p>
+  </li>
+</ul>
+<div id="_15f66662-3a35-4bb5-8d80-7f1033ab151d" class="Note"><p><span class="note_label">NOTE</span>&#xA0; This clause does not differentiate whether identification of the patent took place before or after the approval of the deliverable.</p></div></div>
+      </div>
+      <div id="patent-statement">
+        <h1>5.&#xA0; Patent statement and licensing declaration form</h1>
+        <div id="_purpose_2"><h2>5.1. Purpose</h2>
+
+  <p id="_2002965e-aa80-4e5b-9894-d0091dc4ecca">The patent statement and licensing declaration form is provided
+for entities with information on how relavent patents affect
+CalConnect deliverables (such as, patent holders)
+to provide accurate information in the CalConnect patent
+information database.</p>
+</div>
+        <div id="_procedure"><h2>5.2. Procedure</h2><p id="_3f49940a-c7e2-4545-98af-5016f7cf2c6b">Entities who wish to report patent information to CalConnect
+shall use the CalConnect patent declaration form, which is available on the CalConnect website (see <a href="#patent-form">Appendix A</a> for illustration purposes).</p>
+<p id="_43686616-b5c1-4b65-8166-a34834a00a65">The completed declaration form should be directly submitted
+to the designated contact provided on the form.</p>
+<p id="_80c06e2a-9446-49e2-8259-65cfeab8944c">The declaration form also allows patent holders to make a licensing declaration relative to rights in patents required for implementation of a specific deliverable.</p></div>
+        <div id="_declaration_of_patent_license"><h2>5.3. Declaration of patent license</h2><p id="_d8f73e0d-3dfa-44c7-9ac0-1dfb9248ae82">Specifically, by submitting this declaration form, the submitting party declares, in accordance with the CalConnect patent policy, patents held by it and whose licence would be required to practice or implement part(s) or all of a specific deliverable:</p>
+<ol type="a" id="_4e956245-fbac-46b3-9647-07133db65ac7">
+  <li>
+    <p id="_bc0cb874-6738-48de-94ad-8ea36012a834">its willingness to license (by selecting option 1 or 2 on the Form); or . its unwillingness to license (by selecting option 3 on the Form).</p>
+  </li>
+</ol></div>
+        <div id="_additional_information_required_due_to_unwillingness_to_license"><h2>5.4. Additional information required due to unwillingness to license</h2><p id="_6a990ffd-8056-4a17-aa08-19fd0e038f53">If a patent holder has selected the licensing option 3 on the declaration form, then, for the referenced relevant CalConnect deliverable, CalConnect requires the patent holder to provide certain additional information permitting patent identification.</p>
+<p id="_d7f7d8c1-d15e-49ba-9595-130266368d16">Multiple declaration forms are appropriate if the patent holder wishes to identify several patents and classifies them in different options of the declaration form for the same deliverable or if the patent holder classifies different claims of a complex patent in different options of the declaration form.</p>
+<p id="_3ed42ec7-f182-4da0-a723-de5a9b14d37f">Information contained in a declaration form may be corrected in case of obvious errors, such as a typographical mistake in a standard or patent reference number.</p></div>
+        <div id="_superseding_license_declarations"><h2>5.5. Superseding license declarations</h2><p id="_02ad7a01-8d70-4f53-9960-048665a72a3c">The licensing declaration contained in the declaration form remains in force unless it is superseded by another declaration form containing more favorable licensing terms and conditions from a licensee&#x2019;s perspective reflecting:</p>
+<ol type="a" id="_052e3a39-9ac6-44fb-a1b0-5bddfcf7a4a9">
+  <li>
+    <p id="_0e5fd544-abc6-43b6-a5ef-9aba3f6b8c4a">a change in commitment from option 3 to either option 1 or option 2;</p>
+  </li>
+  <li>
+    <p id="_7237a551-9c9c-4f84-9133-990d80c6b622">a change in commitment from option 2 to option 1; or</p>
+  </li>
+  <li>
+    <p id="_40f480ff-bc0b-49df-91ac-37f58b9340a8">un-checking one or more sub-options contained within option 1 or 2.</p>
+  </li>
+</ol>
+<div id="_contact_information"><h3>5.5.1. Contact information</h3><p id="_57eec6ab-fff6-4838-8136-a67df712301a">In completing declaration forms, attention should be given to supplying contact information that will remain valid over time:</p>
+<ul id="_cf9e9552-b325-4ff9-97fc-1fa3d0569f12">
+  <li>
+    <p id="_a6ab16d2-62ce-476d-8828-b20415c9eb43">"Name", "Department" and "E-mail addresses" should be generic.</p>
+  </li>
+  <li>
+    <p id="_8805f1f7-0009-4fbb-a144-a37cb950a0da">A single point of contact for a particular submitting party is preferred if multiple declaration forms are submitted (particularly for multinational organizations).</p>
+  </li>
+</ul>
+<p id="_55d5ba69-cb7c-4b36-bac3-7b04f97a5f4a">For maintaining the currency of information in the CalConnect patent information database, the patent declarer is urged to directly contact CalConnect on any change or corrections to declaration forms submitted,
+especially on the change of contact points.</p></div></div>
+        <div id="_conduct_of_meetings"><h2>5.6. Conduct of meetings</h2><p id="_7025a224-57c1-42d8-b6e5-e4749f8440d7">Early disclosure of patents contributes to the efficiency of the process by which deliverables are established.</p>
+<p id="_51512e88-1a31-4e64-9f86-06023c4ef254">Therefore, each technical body, in the course of the development of a proposed deliverable, will request the disclosure of any known patents essential to the proposed deliverable.</p>
+<p id="_0d79edda-7213-455a-8ddf-976c70c62353">The leadership of technical body will, ask at an appropriate time in each meeting, whether anyone has knowledge of patents, the use of which may be required to practice or implement the deliverable being considered. The fact that the question was asked shall be recorded in the meeting report, along with any affirmative responses.</p>
+<p id="_8e9bf907-5012-4765-b815-a9642f999078">As long as CalConnect has received no indication of a patent holder selecting <a href="#CC10003">CC/DIR 10003, Clause 2.3</a>, the deliverable may be approved with normal procedure. It is expected that discussions in technical bodies will include consideration of including patented material in a deliverable, however the technical bodies may not take position regarding the essentiality, scope, validity or specific licensing terms of any claimed patents.</p></div>
+        <div id="_patent_information_database"><h2>5.7. Patent information database</h2><p id="_43b07100-8090-4e66-952a-bfc42d16897f">In order to facilitate both the standards-making process and the application of deliverables, CalConnect makes available to the public a patent information database composed of information that was communicated to CalConnect by the means of declaration forms.</p>
+<p id="_279690c4-a54b-4a38-9835-29edb43e6182">The patent information databases may contain information on specific patents, or may contain no such information but rather a statement about compliance with the patent policy for a particular deliverable.</p>
+<p id="_414219ad-7567-4ba9-ad00-635ea29911a5">The patent information databases are not certified to be either accurate or complete, but only reflect the information that has been communicated to CalConnect.</p>
+<p id="_05974af3-d3a1-4639-bcbb-ff81ac8bcbd7">As such, the patent information databases may be viewed as simply raising a flag to alert users that they may wish to contact the entities who have communicated declaration forms to CalConnect in order to determine if patent licenses must be obtained for use or implementation of a particular deliverable.</p></div>
+        <div id="_assignment_or_transfer_of_patent_rights"><h2>5.8. Assignment or transfer of patent rights</h2><p id="_f8d678a6-8fcc-4cc4-9bb9-aab09435a803">The rules governing the assignment or transfer of patent rights are contained in the patent statement and licensing declaration forms (see <a href="#patent-form">Appendix A</a>).</p>
+<p id="_f0caf9ba-27b6-439a-aea1-1b614f95e2e5">By complying with these rules, the patent holder has discharged in full all of its obligations and liability with regards to the licensing commitments after the transfer or assignment.</p>
+<p id="_97d00a43-81f2-4fad-b9c1-f5dd2521b2f6">These rules are not intended to place any duty on the patent holder to compel compliance with the licensing commitment by the assignee or transferee after the transfer occurs.</p></div>
+      </div>
+      <div id="requirements">
+        <h1>6.&#xA0; Requirements on deliverables</h1>
+        <div id="_draft_deliverables"><h2>6.1. Draft deliverables</h2><p id="_b4913325-b217-4555-b547-b6764ac70213">All drafts submitted for comment shall include on the cover page the following text:</p>
+<div class="Quote" id="_b286714f-67b7-46e5-a672-7d401b854338">
+  <p id="_95742b7f-5e13-4a5b-ab22-685d3a3d919b">Recipients of this draft are obligated to submit notification of any relevant patent rights of which they are aware and to provide supporting documentation (such as, together with comments).</p>
+<p class="QuoteAttribution"></p></div></div>
+        <div id="_notification"><h2>6.2. Notification</h2><p id="_c8f67ba4-408e-4560-9330-faa940351439">A published document for which no patent rights are identified during the preparation thereof shall contain the following notice in the foreword:</p>
+<div class="Quote" id="_f70df798-bc78-4af5-a055-ce10a2060abe">
+  <p id="_bf4f3564-f5d8-46c7-8c85-7cc8378b0778">Attention is drawn to the possibility that some of the elements of this document may be the subject of patent rights. CalConnect [and ISO] [and IEC] shall not be held responsible for identifying any or all such patent rights.</p>
+<p class="QuoteAttribution"></p></div>
+<p id="_0817099c-0630-4948-a760-0e926ec8d02c">A published document for which patent rights have been identified during the preparation thereof shall include the following notice in the introduction:</p>
+<div class="Quote" id="_a7ba92e1-d3ee-458e-bbc9-038a73a3b88b"><p id="_0fb81446-1d79-47e5-8bdd-0a2818f4edec">The Calendaring and Scheduling Consortium (CalConnect) [and The International Organization for Standardization (ISO)] [and The International Electrotechnical Commission (IEC)] draws attention to the fact that it is claimed that compliance with this document may involve the use of a patent concerning (&#x2026;&#x200B; subject matter &#x2026;&#x200B;) given in (&#x2026;&#x200B; subclause &#x2026;&#x200B;).</p>
+<p id="_48b73eb7-d615-4c9a-915f-c4924684553f">CalConnect [and ISO] [and IEC] take[s] no position concerning the evidence, validity and scope of this patent right.</p>
+<p id="_71f20ac0-2ead-497f-9914-cfb848f912a0">The holder of this patent right has assured CalConnect [and ISO] [and IEC] that he/she is willing to negotiate licences under reasonable and non-discriminatory terms and conditions with applicants throughout the world. In this respect, the statement of the holder of this patent right is registered with CalConnect [and ISO] [and IEC]. Information may be obtained from:</p>
+<p id="_e65f95f8-973c-4424-b552-0cc86347e225">name of holder of patent right &#x2026;&#x200B;</p>
+<p id="_6eecac9d-b93c-44bc-b919-fdade36b2303">address &#x2026;&#x200B;</p>
+<p id="_a77d74ad-3625-40f3-a479-5b8241f6239a">Attention is drawn to the possibility that some of the elements of this document may be the subject of patent rights other than those identified above. CalConnect [and ISO] [and IEC] shall not be held responsible for identifying any or all such patent rights.</p><p class="QuoteAttribution"></p></div></div>
+        <div id="_collaborative_developed_deliverables"><h2>6.3. Collaborative developed deliverables</h2>
+
+  <p id="_1e78f56e-605a-4489-a8a6-66b3b78a55c7">Patent declarations in joint deliverables between CalConnect and other organizations apply only to the specific documents indicated in the declaration forms. Declarations do not apply to documents that are altered (such as through adoption).</p>
+</div>
+      </div>
+      <br />
+      <div id="patent-form" class="Section3">
+        <h1 class="Annex"><b>Appendix A</b><br />(normative) <br /><b>Patent statement and licensing declaration for CalConnect deliverables</b></h1>
+        <p id="_cf7177c5-1e71-4148-bce8-5fe176fc49bb">
+  <i>This declaration does not represent an actual grant of a license</i>
+</p>
+        <p id="_e6fd95d0-958b-4954-8130-84220dd56098">Please submit this form to:</p>
+        <p id="_dfaf9099-c313-4bf5-a628-0d83a002aa54">Executive Director<br />
+The Calendaring and Scheduling Consortium, Inc.<br />
+4390 Chaffin Lane<br />
+McKinleyville<br />
+California 95519<br />
+United States of America<br />
+Email: <a href="mailto:patents@calconnect.org">patents@calconnect.org</a></p>
+        <div id="_patent_holder"><h2>A.1. Patent Holder</h2>
+
+  <ul id="_85a8123f-b702-4e2c-8461-774e966f1884">
+  <li>
+    <p id="_b2661b07-0b5a-4c0f-80c9-acccdf4595c3">Legal Name: __________________________</p>
+  </li>
+</ul>
+</div>
+        <div id="_contact_for_license_application"><h2>A.2. Contact for license application</h2>
+
+  <ul id="_21fa81a5-9baa-4e7d-afe3-036635bebf41">
+  <li>
+    <p id="_e91e33a7-26eb-4871-a23c-99848fb3313c">Name &amp; Department __________________________</p>
+  </li>
+  <li>
+    <p id="_87f0460d-a1f5-41b8-afc3-1ed28c042e49">Address __________________________</p>
+  </li>
+  <li>
+    <p id="_f422dc4a-7eb2-466d-badb-cdbfd53c8011">Tel. __________________________</p>
+  </li>
+  <li>
+    <p id="_35799a3f-6602-4679-bc73-ab327f375b52">Fax __________________________</p>
+  </li>
+  <li>
+    <p id="_1589597f-4d31-4076-a1c0-43776412381f">E-mail __________________________</p>
+  </li>
+  <li>
+    <p id="_5a5b3f69-a96c-4b43-bff9-58cd74c2aead">URL (optional) __________________________</p>
+  </li>
+</ul>
+</div>
+        <div id="_document_type"><h2>A.3. Document type</h2>
+
+  <ul id="_22b5493e-78e6-4052-acb3-56c713acb530">
+  <li>
+    <p id="_c80b8eb5-c1f3-4a69-b53c-ffbf72fea216">CalConnect Deliverable</p>
+  </li>
+  <li>
+    <p id="_07c62d69-aeaf-4431-abad-43c9c158141c">CalConnect co-published Deliverable
+(please return this form to CalConnect and the appropriate
+form to the co-publishing parties)</p>
+  </li>
+</ul>
+</div>
+        <div id="_patent_information"><h2>A.4. Patent information</h2>
+
+  <ul id="_cadc6651-d29c-40df-a63f-2519fa83e219">
+  <li>
+    <p id="_fed1250f-ddbd-4142-920e-9d90c4357dff">Number  __________________________</p>
+  </li>
+  <li>
+    <p id="_c357ebe4-435b-4aa0-b3b2-3cc5c3514eac">Title  __________________________</p>
+  </li>
+</ul>
+</div>
+        <div id="_licensing_declaration"><h2>A.5. Licensing declaration</h2><p id="_bbec1a9d-4850-439a-b36e-f310b6eb470d">The patent holder believes that it holds granted and/or pending applications for patents, the use of which would be required to implement the above document and hereby declares, in accordance with the CalConnect patent policy (see <a href="#CC10003">CC/DIR 10003</a>), that (check one option only):</p>
+<ol type="a" id="_efbc612f-ba14-4500-b9c2-f712bcce1fb5">
+  <li>
+    <p id="_52073021-b1b0-4f96-9953-454884c7e7b4">[ ] The patent holder is prepared to grant a free of charge license to an unrestricted number of applicants on a worldwide, non-discriminatory basis and under other reasonable terms and conditions to make, use, and sell implementations of the above document.</p>
+    <ol type="1" id="_d3390a71-82c6-48a3-9325-6e652aed5256">
+  <li>
+    <p id="_ebbc0449-c151-4eac-8827-0be778746f11">[ ] Also mark here __ if the patent holder&#x2019;s willingness to license is conditioned on reciprocity for the above document.</p>
+  </li>
+  <li>
+    <p id="_8d8bb78a-2331-4586-b0c0-227d737a7cb3">[ ] Also mark here __ if the patent holder reserves the right to license on reasonable terms and conditions (but not free of charge) to applicants who are only willing to license their patent, whose use would be required to implement the above document, on reasonable terms and conditions (but not free of charge).</p>
+  </li>
+</ol>
+  </li>
+  <li>
+    <p id="_e3068f5e-80f8-4cc9-90bf-999da56a7b1f">[ ] The patent holder is prepared to grant a license to an unrestricted number of applicants on a worldwide, non-discriminatory basis and on reasonable terms and conditions to make, use and sell implementations of the above document.</p>
+    <ol type="1" id="_7590dc04-c876-4a78-ba23-b9f9ed6967e8">
+  <li>
+    <p id="_cb96894c-7951-497d-ad18-c803fcbe30fa">[ ] Also mark here __ if the patent holder&#x2019;s willingness to license is conditioned on reciprocity for the above document.</p>
+  </li>
+</ol>
+  </li>
+  <li>
+    <p id="_d06861de-0e5a-4900-968f-201c5bd0dfdf">[ ] The patent holder is unwilling to grant licenses in accordance with provisions of either 1 or 2 above.</p>
+  </li>
+</ol>
+<p id="_0e7e5d01-4fc5-4f65-a026-c8399c9a8476">In this case, the following information must be provided to CalConnect as part of this declaration:</p>
+<ul id="_7479e2ae-83ef-4033-a642-bfa65dde4730">
+  <li>
+    <p id="_9e81f33e-352a-426d-a1db-f4441efe2cf9">granted patent number or patent application number (if pending);</p>
+  </li>
+  <li>
+    <p id="_bff5209f-b666-40fc-8b99-32230b0aaa76">an indication of which portions of the above document are affected;</p>
+  </li>
+  <li>
+    <p id="_6fa6fe7f-2442-4968-90f8-a2a18a605a3c">a description of the patents covering the above document.</p>
+  </li>
+</ul>
+<div id="_8d6637cb-75f3-4363-9448-2cef0b95a43f" class="Note"><p><span class="note_label">NOTE</span>&#xA0; Licensing negotiations are left to the parties concerned and are performed outside CalConnect.</p></div></div>
+        <div id="_patent_information_2"><h2>A.6. Patent Information</h2><p id="_d4c5d023-0f49-4350-955e-d92cca2fa5c5">Preferred but not required for options 1 and 2. Required for option 3 (see NOTE).</p>
+<p class="TableTitle" align="center">Table A.1</p><table id="_82d6ba72-df15-41b9-97b2-cc027d1d7f03" class="MsoISOTable" border="1" cellspacing="0" cellpadding="0"><thead><tr><th align="left" style="font-weight:bold;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;">No.</th><th align="left" style="font-weight:bold;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;">Status [granted/ pending]</th><th align="left" style="font-weight:bold;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;">Country</th><th align="left" style="font-weight:bold;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;">Granted patent number or application number (if pending)</th><th align="left" style="font-weight:bold;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;">Title</th></tr></thead><tbody><tr><td align="left" style="border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.0pt;">1</td><td align="left" style="border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.0pt;"></td><td align="left" style="border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.0pt;"></td><td align="left" style="border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.0pt;"></td><td align="left" style="border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.0pt;"></td></tr><tr><td align="left" style="border-top:none;border-bottom:solid windowtext 1.0pt;">2</td><td align="left" style="border-top:none;border-bottom:solid windowtext 1.0pt;"></td><td align="left" style="border-top:none;border-bottom:solid windowtext 1.0pt;"></td><td align="left" style="border-top:none;border-bottom:solid windowtext 1.0pt;"></td><td align="left" style="border-top:none;border-bottom:solid windowtext 1.0pt;"></td></tr><tr><td align="left" style="border-top:none;border-bottom:solid windowtext 1.0pt;">3</td><td align="left" style="border-top:none;border-bottom:solid windowtext 1.0pt;"></td><td align="left" style="border-top:none;border-bottom:solid windowtext 1.0pt;"></td><td align="left" style="border-top:none;border-bottom:solid windowtext 1.0pt;"></td><td align="left" style="border-top:none;border-bottom:solid windowtext 1.0pt;"></td></tr><tr><td align="left" style="border-top:none;border-bottom:solid windowtext 1.0pt;">4</td><td align="left" style="border-top:none;border-bottom:solid windowtext 1.0pt;"></td><td align="left" style="border-top:none;border-bottom:solid windowtext 1.0pt;"></td><td align="left" style="border-top:none;border-bottom:solid windowtext 1.0pt;"></td><td align="left" style="border-top:none;border-bottom:solid windowtext 1.0pt;"></td></tr><tr><td align="left" style="border-top:none;border-bottom:solid windowtext 1.0pt;">5</td><td align="left" style="border-top:none;border-bottom:solid windowtext 1.0pt;"></td><td align="left" style="border-top:none;border-bottom:solid windowtext 1.0pt;"></td><td align="left" style="border-top:none;border-bottom:solid windowtext 1.0pt;"></td><td align="left" style="border-top:none;border-bottom:solid windowtext 1.0pt;"></td></tr><tr><td align="left" style="border-top:none;border-bottom:solid windowtext 1.0pt;">6</td><td align="left" style="border-top:none;border-bottom:solid windowtext 1.0pt;"></td><td align="left" style="border-top:none;border-bottom:solid windowtext 1.0pt;"></td><td align="left" style="border-top:none;border-bottom:solid windowtext 1.0pt;"></td><td align="left" style="border-top:none;border-bottom:solid windowtext 1.0pt;"></td></tr><tr><td align="left" style="border-top:none;border-bottom:solid windowtext 1.0pt;">7</td><td align="left" style="border-top:none;border-bottom:solid windowtext 1.0pt;"></td><td align="left" style="border-top:none;border-bottom:solid windowtext 1.0pt;"></td><td align="left" style="border-top:none;border-bottom:solid windowtext 1.0pt;"></td><td align="left" style="border-top:none;border-bottom:solid windowtext 1.0pt;"></td></tr><tr><td align="left" style="border-top:none;border-bottom:solid windowtext 1.0pt;">8</td><td align="left" style="border-top:none;border-bottom:solid windowtext 1.0pt;"></td><td align="left" style="border-top:none;border-bottom:solid windowtext 1.0pt;"></td><td align="left" style="border-top:none;border-bottom:solid windowtext 1.0pt;"></td><td align="left" style="border-top:none;border-bottom:solid windowtext 1.0pt;"></td></tr><tr><td align="left" style="border-top:none;border-bottom:solid windowtext 1.0pt;">9</td><td align="left" style="border-top:none;border-bottom:solid windowtext 1.0pt;"></td><td align="left" style="border-top:none;border-bottom:solid windowtext 1.0pt;"></td><td align="left" style="border-top:none;border-bottom:solid windowtext 1.0pt;"></td><td align="left" style="border-top:none;border-bottom:solid windowtext 1.0pt;"></td></tr><tr><td align="left" style="border-top:none;border-bottom:solid windowtext 1.5pt;">10</td><td align="left" style="border-top:none;border-bottom:solid windowtext 1.5pt;"></td><td align="left" style="border-top:none;border-bottom:solid windowtext 1.5pt;"></td><td align="left" style="border-top:none;border-bottom:solid windowtext 1.5pt;"></td><td align="left" style="border-top:none;border-bottom:solid windowtext 1.5pt;"></td></tr></tbody></table>
+<p id="_d4748e74-40f2-4c0f-9b35-0adbaa2297ab">[ ] Check here if additional patent information is provided on additional pages.</p>
+<div id="_3f3f223e-ae97-4cbb-9fbd-a0e748edee52" class="Note"><p><span class="note_label">NOTE</span>&#xA0; For option 3, the additional minimum information that shall also be provided is listed in the option 3 box above.</p></div></div>
+        <div id="_signature_include_on_final_page_only"><h2>A.7. Signature (include on final page only)</h2>
+
+  <ul id="_a1637281-f73a-4fd6-bfda-cd65735465d9">
+  <li>
+    <p id="_6d618291-02f6-48d7-9b72-0a7efd681f79">Patent Holder __________________________</p>
+  </li>
+  <li>
+    <p id="_ea43cb6e-37ef-4b81-a84f-89a857806619">Name of authorized person __________________________</p>
+  </li>
+  <li>
+    <p id="_c8d9db32-2045-4039-9e97-1ca03c2963dc">Title of authorized person __________________________</p>
+  </li>
+  <li>
+    <p id="_39a53759-de54-49d7-8aee-9dc54f49a0ed">Signature, Place, Date __________________________</p>
+  </li>
+</ul>
+</div>
+      </div>
+      <br />
+      <div>
+        <h1 class="Section3">Bibliography</h1>
+      </div>
+    </main>
+  <script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    asciimath2jax: {
+      delimiters: [['(#(', ')#)']]
+    }
+ });
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=AM_HTMLorMML"></script>
+<script>
+    //TOC generation
+      $('#toc').toc({
+          'selectors': 'h1,h2:not(.TermNum)', //elements to use as headings
+          'container': 'main', //element to find all selectors in
+          'smoothScrolling': true, //enable or disable smooth scrolling on click
+          'prefix': 'toc', //prefix for anchor tags and class names
+          'onHighlight': function(el) {}, //called when a new section is highlighted 
+          'highlightOnScroll': true, //add class to heading that is currently in focus
+          'highlightOffset': 100, //offset to trigger the next headline
+          'anchorName': function(i, heading, prefix) { //custom function for anchor name
+              return prefix+i;
+          },
+          'headerText': function(i, heading, $heading) { //custom function building the header-item text
+              return $heading.text();
+          },
+      'itemClass': function(i, heading, $heading, prefix) { // custom function for item class
+        return $heading[0].tagName.toLowerCase();
+      }
+      });
+      
+  </script>
+
+<script>
+  //TOC toggle animation
+$('#toggle').on('click', function(){
+    if( $('nav').is(':visible') ) {
+        $('nav').animate({ 'left': '-353px' }, 'slow', function(){
+            $('nav').hide();
+        });
+        $('.container').animate({ 'padding-left': '31px' }, 'slow');
+    }
+    else {
+        $('nav').show();
+        $('nav').animate({ 'left': '0px' }, 'slow');
+        $('.container').animate({ 'padding-left': '360px' }, 'slow');
+    }
+});
+</script>
+
+<script>
+    // Scroll to top button
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+            document.getElementById("myBtn").style.display = "block";
+        } else {
+            document.getElementById("myBtn").style.display = "none";
+        }
+    }
+    
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+    </script>
+
+  <script>
+/**
+ * AnchorJS - v4.1.0 - 2017-09-20
+ * https://github.com/bryanbraun/anchorjs
+ * Copyright (c) 2017 Bryan Braun; Licensed MIT
+ */
+!function(A,e){"use strict";"function"==typeof define&&define.amd?define([],e):"object"==typeof module&&module.exports?module.exports=e():(A.AnchorJS=e(),A.anchors=new A.AnchorJS)}(this,function(){"use strict";return function(A){function e(A){A.icon=A.hasOwnProperty("icon")?A.icon:"",A.visible=A.hasOwnProperty("visible")?A.visible:"hover",A.placement=A.hasOwnProperty("placement")?A.placement:"right",A.ariaLabel=A.hasOwnProperty("ariaLabel")?A.ariaLabel:"Anchor",A.class=A.hasOwnProperty("class")?A.class:"",A.truncate=A.hasOwnProperty("truncate")?Math.floor(A.truncate):64}function t(A){var e;if("string"==typeof A||A instanceof String)e=[].slice.call(document.querySelectorAll(A));else{if(!(Array.isArray(A)||A instanceof NodeList))throw new Error("The selector provided to AnchorJS was invalid.");e=[].slice.call(A)}return e}function i(){if(null===document.head.querySelector("style.anchorjs")){var A,e=document.createElement("style");e.className="anchorjs",e.appendChild(document.createTextNode("")),void 0===(A=document.head.querySelector('[rel="stylesheet"], style'))?document.head.appendChild(e):document.head.insertBefore(e,A),e.sheet.insertRule(" .anchorjs-link {   opacity: 0;   text-decoration: none;   -webkit-font-smoothing: antialiased;   -moz-osx-font-smoothing: grayscale; }",e.sheet.cssRules.length),e.sheet.insertRule(" *:hover > .anchorjs-link, .anchorjs-link:focus  {   opacity: 1; }",e.sheet.cssRules.length),e.sheet.insertRule(" [data-anchorjs-icon]::after {   content: attr(data-anchorjs-icon); }",e.sheet.cssRules.length),e.sheet.insertRule(' @font-face {   font-family: "anchorjs-icons";   src: url(data:n/a;base64,AAEAAAALAIAAAwAwT1MvMg8yG2cAAAE4AAAAYGNtYXDp3gC3AAABpAAAAExnYXNwAAAAEAAAA9wAAAAIZ2x5ZlQCcfwAAAH4AAABCGhlYWQHFvHyAAAAvAAAADZoaGVhBnACFwAAAPQAAAAkaG10eASAADEAAAGYAAAADGxvY2EACACEAAAB8AAAAAhtYXhwAAYAVwAAARgAAAAgbmFtZQGOH9cAAAMAAAAAunBvc3QAAwAAAAADvAAAACAAAQAAAAEAAHzE2p9fDzz1AAkEAAAAAADRecUWAAAAANQA6R8AAAAAAoACwAAAAAgAAgAAAAAAAAABAAADwP/AAAACgAAA/9MCrQABAAAAAAAAAAAAAAAAAAAAAwABAAAAAwBVAAIAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAMCQAGQAAUAAAKZAswAAACPApkCzAAAAesAMwEJAAAAAAAAAAAAAAAAAAAAARAAAAAAAAAAAAAAAAAAAAAAQAAg//0DwP/AAEADwABAAAAAAQAAAAAAAAAAAAAAIAAAAAAAAAIAAAACgAAxAAAAAwAAAAMAAAAcAAEAAwAAABwAAwABAAAAHAAEADAAAAAIAAgAAgAAACDpy//9//8AAAAg6cv//f///+EWNwADAAEAAAAAAAAAAAAAAAAACACEAAEAAAAAAAAAAAAAAAAxAAACAAQARAKAAsAAKwBUAAABIiYnJjQ3NzY2MzIWFxYUBwcGIicmNDc3NjQnJiYjIgYHBwYUFxYUBwYGIwciJicmNDc3NjIXFhQHBwYUFxYWMzI2Nzc2NCcmNDc2MhcWFAcHBgYjARQGDAUtLXoWOR8fORYtLTgKGwoKCjgaGg0gEhIgDXoaGgkJBQwHdR85Fi0tOAobCgoKOBoaDSASEiANehoaCQkKGwotLXoWOR8BMwUFLYEuehYXFxYugC44CQkKGwo4GkoaDQ0NDXoaShoKGwoFBe8XFi6ALjgJCQobCjgaShoNDQ0NehpKGgobCgoKLYEuehYXAAAADACWAAEAAAAAAAEACAAAAAEAAAAAAAIAAwAIAAEAAAAAAAMACAAAAAEAAAAAAAQACAAAAAEAAAAAAAUAAQALAAEAAAAAAAYACAAAAAMAAQQJAAEAEAAMAAMAAQQJAAIABgAcAAMAAQQJAAMAEAAMAAMAAQQJAAQAEAAMAAMAAQQJAAUAAgAiAAMAAQQJAAYAEAAMYW5jaG9yanM0MDBAAGEAbgBjAGgAbwByAGoAcwA0ADAAMABAAAAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAH//wAP) format("truetype"); }',e.sheet.cssRules.length)}}this.options=A||{},this.elements=[],e(this.options),this.isTouchDevice=function(){return!!("ontouchstart"in window||window.DocumentTouch&&document instanceof DocumentTouch)},this.add=function(A){var n,o,s,a,r,c,h,l,u,d,f,p=[];if(e(this.options),"touch"===(f=this.options.visible)&&(f=this.isTouchDevice()?"always":"hover"),A||(A="h2, h3, h4, h5, h6"),0===(n=t(A)).length)return this;for(i(),o=document.querySelectorAll("[id]"),s=[].map.call(o,function(A){return A.id}),r=0;r<n.length;r++)if(this.hasAnchorJSLink(n[r]))p.push(r);else{if(n[r].hasAttribute("id"))a=n[r].getAttribute("id");else if(n[r].hasAttribute("data-anchor-id"))a=n[r].getAttribute("data-anchor-id");else{u=l=this.urlify(n[r].textContent),h=0;do{void 0!==c&&(u=l+"-"+h),c=s.indexOf(u),h+=1}while(-1!==c);c=void 0,s.push(u),n[r].setAttribute("id",u),a=u}a.replace(/-/g," "),(d=document.createElement("a")).className="anchorjs-link "+this.options.class,d.href="#"+a,d.setAttribute("aria-label",this.options.ariaLabel),d.setAttribute("data-anchorjs-icon",this.options.icon),"always"===f&&(d.style.opacity="1"),""===this.options.icon&&(d.style.font="1em/1 anchorjs-icons","left"===this.options.placement&&(d.style.lineHeight="inherit")),"left"===this.options.placement?(d.style.position="absolute",d.style.marginLeft="-1em",d.style.paddingRight="0.5em",n[r].insertBefore(d,n[r].firstChild)):(d.style.paddingLeft="0.375em",n[r].appendChild(d))}for(r=0;r<p.length;r++)n.splice(p[r]-r,1);return this.elements=this.elements.concat(n),this},this.remove=function(A){for(var e,i,n=t(A),o=0;o<n.length;o++)(i=n[o].querySelector(".anchorjs-link"))&&(-1!==(e=this.elements.indexOf(n[o]))&&this.elements.splice(e,1),n[o].removeChild(i));return this},this.removeAll=function(){this.remove(this.elements)},this.urlify=function(A){var t=/[& +$,:;=?@"#{}|^~[`%!'<>\]\.\/\(\)\*\\]/g;return this.options.truncate||e(this.options),A.trim().replace(/\'/gi,"").replace(t,"-").replace(/-{2,}/g,"-").substring(0,this.options.truncate).replace(/^-+|-+$/gm,"").toLowerCase()},this.hasAnchorJSLink=function(A){var e=A.firstChild&&(" "+A.firstChild.className+" ").indexOf(" anchorjs-link ")>-1,t=A.lastChild&&(" "+A.lastChild.className+" ").indexOf(" anchorjs-link ")>-1;return e||t||!1}}});  </script>
+
+  <script>
+  $(document).ready(function() {
+          $('[id^=toc]').each(function ()
+          {
+             var currentToc = $(this);
+       var url = window.location.href;
+             currentToc.wrap("<a href='" + url + "#" + currentToc.attr("id") + "' </a>");
+          });
+});
+  anchors.options = {
+  placement: 'left'
+};
+anchors.add('h1, h2, h3, h4');
+</script></body>
+</html>
