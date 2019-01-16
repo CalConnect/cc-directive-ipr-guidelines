@@ -7,7 +7,7 @@ CalConnect is committed in expanding the realm of standards
 in collaborative technologies with a focus on interoperability
 across the globe and communities of practice.
 
-As a proponent of open standards, has adopted a patent policy
+As a proponent of open standards, CalConnect has adopted a patent policy
 in <<CC10003>> to align IPR practice with major international
 standardization bodies including ISO, IEC and ITU.
 
