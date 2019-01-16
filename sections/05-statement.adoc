@@ -4,16 +4,17 @@
 
 === Purpose
 
-The patent statement and licensing declaration form is provided
-for entities with information on how relavent patents affect
+The patent statement and licensing declaration form (see <<patent-form>>) is provided
+for entities with information on how essential patents affect
 CalConnect deliverables (such as, patent holders)
 to provide accurate information in the CalConnect patent
 information database.
 
 === Procedure
 
-Entities who wish to report patent information to CalConnect
-shall use the CalConnect patent declaration form, which is available on the CalConnect website (see <<patent-form>> for illustration purposes).
+Entities shall report patent information to CalConnect
+using the CalConnect patent declaration form, which is
+available on the CalConnect website (see <<patent-form>>).
 
 The completed declaration form should be directly submitted
 to the designated contact provided on the form.
@@ -25,7 +26,8 @@ The declaration form also allows patent holders to make a licensing declaration 
 
 Specifically, by submitting this declaration form, the submitting party declares, in accordance with the CalConnect patent policy, patents held by it and whose licence would be required to practice or implement part(s) or all of a specific deliverable:
 
-. its willingness to license (by selecting option 1 or 2 on the Form); or . its unwillingness to license (by selecting option 3 on the Form).
+. its willingness to license (by selecting option 1 or 2 on the Form); or
+. its unwillingness to license (by selecting option 3 on the Form).
 
 
 === Additional information required due to unwillingness to license
@@ -46,7 +48,7 @@ The licensing declaration contained in the declaration form remains in force unl
 
 ==== Contact information
 
-In completing declaration forms, attention should be given to supplying contact information that will remain valid over time:
+In completing the declaration form, attention should be given to supplying contact information that will remain valid over time:
 
 * "`Name`", "`Department`" and "`E-mail addresses`" should be generic.
 

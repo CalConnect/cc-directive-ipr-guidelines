@@ -6,7 +6,7 @@
 === General
 
 This clause describes the principles of patent disclosure
-of patents that may affect standardization deliverables produced
+of patents that may affect CalConnect standardization deliverables produced
 by CalConnect.
 
 This clause applies to any patent disclosed or drawn
@@ -22,7 +22,7 @@ are obligated to inform CalConnect of
 any known patent or to any known pending patent application,
 as mandated by <<CC10003,clause=1>>
 
-Where such parties include recipients of a draft deliverable at any stage,
+Where such parties include recipients of a draft CalConnect standardization deliverable at any stage,
 and the patent or patent application could be of the party's own or
 that of other entities.
 
@@ -30,11 +30,10 @@ that of other entities.
 
 Patent information should be disclosed as early as possible during the development of the deliverable.
 
-Such patent information should be provided in good faith and on a best effort basis.
+Such patent information should be provided in good faith and on a best effort basis. There is no requirement for patent searches.
 
 NOTE: This might not be possible when the first draft text appears since at this time, the text might be still too vague or subject to subsequent major modifications.
 
-NOTE: There is no requirement for patent searches.
 
 ==== External-originating disclosure
 
@@ -62,7 +61,7 @@ If a patent holder is unwilling to license under <<CC10003,clause=2.1>> or <<CC1
 
 Such action shall include, but may not be limited to:
 
-* a review of the deliverable or its draft in order to remove the potential conflict; or
+* a review of the CalConnect standardization deliverable or its draft in order to remove the potential conflict; or
 * to further examine and clarify the technical considerations causing the conflict.
 
 NOTE: This clause does not differentiate whether identification of the patent took place before or after the approval of the deliverable.
