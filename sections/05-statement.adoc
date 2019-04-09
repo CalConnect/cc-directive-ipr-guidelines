@@ -7,7 +7,7 @@
 The patent statement and licensing declaration form (see <<patent-form>>) is provided
 for entities with information on how essential patents affect
 CalConnect deliverables (such as, patent holders)
-to provide accurate information in the CalConnect patent
+to provide consistent, accurate information in the CalConnect patent
 information database.
 
 === Procedure

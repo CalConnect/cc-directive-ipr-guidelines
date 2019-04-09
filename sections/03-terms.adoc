@@ -3,6 +3,12 @@
 [[terms]]
 == Terms and definitions
 
+
+=== declaration form
+
+"`Patent Statement and Licensing Declaration Form`" as stated in <<patent-form>>
+
+
 [[term-contribution]]
 === contribution
 
@@ -16,13 +22,7 @@ Contribution:: Any document submitted for consideration by a Technical Body.
 [[term-free-of-charge]]
 === free of charge
 
-no monetary compensation will be sought by the patent holder (<<term-patent-holder>>) under licensing arrangements, if any
-
-NOTE: "`Free of charge`" does not indicate that the patent holder is waiving all of its rights with respect to a patent, but only on the issue of monetary compensation.
-
-NOTE: "`Free of charge`" means the patent holder will not seek any monetary compensation as part of the licensing arrangement (whether such compensation is called a royalty, a one-time licensing fee, etc.).
-
-NOTE: The patent holder is still entitled to require that the implementer of the relevant CalConnect standardization deliverable sign a license agreement that contains other reasonable terms and conditions such as those relating to governing law, field of use, warranties, etc.
+_patent holder_ (<<term-patent-holder>>) will not seek any monetary compensation as part of the licensing arrangement (whether such compensation is called a royalty, a one-time licensing fee, etc.); patent holder is still entitled to require that the implementer of the relevant CalConnect standardization deliverable sign a license agreement that contains other reasonable terms and conditions (such as those relating to governing law, field of use, warranties, etc.); does not indicate that the patent holder is waiving all of its rights with respect to a patent, but only on the issue of monetary compensation
 
 ////
 Free of Charge:: The words "Free of Charge" do not mean that the Patent Holder is waiving all of its rights with respect to the Patent. Rather, "Free of Charge" refers to the issue of monetary compensation; i.e., that the Patent Holder will not seek any monetary compensation as part of the licensing arrangement (whether such compensation is called a royalty, a one-time licensing fee, etc.). However, while the Patent Holder in this situation is committing to not charging any monetary amount, the Patent Holder is still entitled to require that the implementer of the relevant deliverable sign a license agreement that contains other reasonable terms and conditions such as those relating to governing law, field of use, warranties, etc.
@@ -37,7 +37,7 @@ claims contained in and identified by patents, utility models and other similar 
 [[term-essential-patent]]
 === essential patent
 
-patent (<<term-patent>>) is essential to implement a specific CalConnect standardization deliverable
+_patent_ (<<term-patent>>) is essential to implement a specific CalConnect standardization deliverable
 
 ////
 Patent:: The word "Patent" means those claims contained in and identified by patents, utility models and other similar statutory rights based on inventions (including applications for any of these) solely to the extent that any such claims are essential to the implementation of a deliverable. Essential patents are patents that would be required to implement a specific deliverable.
@@ -46,7 +46,7 @@ Patent:: The word "Patent" means those claims contained in and identified by pat
 [[term-patent-holder]]
 === patent holder
 
-person or entity that owns, controls and/or has the ability to license patents (<<term-patent>>)
+person or entity that owns, controls and/or has the ability to license _patents_ (<<term-patent>>)
 
 ////
 Patent Holder:: Person or entity that owns, controls and/or has the ability to license Patents.
@@ -56,7 +56,7 @@ Patent Holder:: Person or entity that owns, controls and/or has the ability to l
 [[term-reciprocity]]
 === reciprocity
 
-patent holder (<<term-patent-holder>>) shall only be required to license any prospective licensee if such prospective licensee will commit to license its patent(s) for implementation of the same relevant CalConnect standardization deliverable free of charge (<<term-free-of-charge>>) or under reasonable terms and conditions
+_patent holder_ (<<term-patent-holder>>) shall only be required to license any prospective licensee if such prospective licensee will commit to license its patent(s) for implementation of the same relevant CalConnect standardization deliverable _free of charge_ (<<term-free-of-charge>>) or under reasonable terms and conditions
 
 ////
 Reciprocity:: The word "Reciprocity" means that the Patent Holder shall only be required to license any prospective licensee if such prospective licensee will commit to license its Patent(s) for implementation of the same relevant deliverable Free of Charge or under reasonable terms and conditions.
