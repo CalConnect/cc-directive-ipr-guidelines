@@ -3,7 +3,7 @@
 
 === General
 
-CalConnect is committed in expanding the realm of standards
+CalConnect is committed to expanding the realm of standards
 in collaborative technologies with a focus on interoperability
 across the globe and communities of practice.
 

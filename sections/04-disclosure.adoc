@@ -5,8 +5,8 @@
 
 === General
 
-This clause describes the principles of patent disclosure
-of patents that may affect CalConnect standardization deliverables produced
+This clause describes the principles of disclosure of patents
+that may affect CalConnect standardization deliverables produced
 by CalConnect.
 
 This clause applies to any patent disclosed or drawn
