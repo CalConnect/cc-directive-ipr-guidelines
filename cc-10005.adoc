@@ -5,9 +5,9 @@
 :language: en
 :doctype: directive
 :edition: 1
-:status: draft-standard
-:revdate: 2019-01-18
-:published-date: 2019-01-18
+:status: published
+:revdate: 2019-06-13
+:published-date: 2019-06-13
 :script: Latn
 :technical-committee: PUBLISH
 :draft:
