@@ -151,6 +151,7 @@ Assignment/transfer of Patent rights:: Licensing declarations made pursuant to C
 
 Preferred but not required for options <<option-1,a)>> and <<option-2,b)>>. Required for <<option-3,c)>>.
 
+.Patent information form
 [cols="1,1,1,1,1",options="header"]
 |===
 |No.
