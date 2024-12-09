@@ -2,37 +2,37 @@
 :title: Guidelines for the implementation of the CalConnect patent policy
 :docnumber: 10005
 :copyright-year: 2019
-:language: en
 :doctype: directive
 :edition: 1
 :status: published
 :revdate: 2019-06-13
 :published-date: 2019-06-13
-:script: Latn
 :technical-committee: PUBLISH
 :imagesdir: images
-:docfile: cc-10005.adoc
-:mn-document-class: csd
 :mn-output-extensions: xml,html,pdf
 :local-cache-only:
 :data-uri-image:
 
-:sectnums!:
-
 include::sections/00-foreword.adoc[]
+
 include::sections/00-intro.adoc[]
 
-:sectnums:
-
 include::sections/01-scope.adoc[]
+
 include::sections/02-normrefs.adoc[]
+
 include::sections/03-terms.adoc[]
+
 include::sections/04-disclosure.adoc[]
+
 include::sections/05-statement.adoc[]
+
 include::sections/06-documents.adoc[]
+
 include::sections/90-form.adoc[]
 
 include::sections/99-bibliography.adoc[]
+
 
 
 

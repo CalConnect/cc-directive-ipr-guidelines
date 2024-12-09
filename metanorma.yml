@@ -1,8 +1,9 @@
 ---
 metanorma:
-  deploy:
-    email: "ci@metanorma.org"
-relaton:
+  source:
+    files:
+      - sources/cc-10005.adoc
+
   collection:
-    name: TC-PUBLISH
+    name: "Directive: Guidelines for the implementation of the CalConnect patent policy"
     organization: CalConnect
