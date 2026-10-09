@@ -16,6 +16,12 @@
 
 include::sections/00-foreword.adoc[]
 
+[abstract]
+== Abstract
+
+This document provides guidelines on the application of the CalConnect patent policy to the CalConnect standardization and publication process and to document requirements. It does not cover the implementation of requirements in CalConnect standards which involve intellectual property rights, such as patents.
+
+
 include::sections/00-intro.adoc[]
 
 include::sections/01-scope.adoc[]
